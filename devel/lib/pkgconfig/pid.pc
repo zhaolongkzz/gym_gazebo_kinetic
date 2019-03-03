@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/devel
+
+Name: pid
+Description: Description of pid
+Version: 0.0.27
+Cflags: -I/home/zzl/gym_ws/devel/include -I/home/zzl/gym_ws/src/openai_ros/pid/include
+Libs: -L/home/zzl/gym_ws/devel/lib 
+Requires: roscpp std_msgs message_runtime dynamic_reconfigure

@@ -1,0 +1,27 @@
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: tanh
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 6]
+    bias: true
+    init: glorot_uniform
+    input_dim: 6
+    input_dtype: float32
+    name: dense_1
+    output_dim: 24
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: tanh, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: 24,
+    name: dense_2, output_dim: 48, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: 48,
+    name: dense_3, output_dim: 5, trainable: true}
+keras_version: 1.2.2

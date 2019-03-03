@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <!-- Distance based on test http://robotx.org/images/files/RobotX_2018_Task_Summary.pdf Demonstrate Navigation Control -->
+    <!-- Spawn Buoy 1 START-->
+    <include file="$(find spawn_robot_tools_pkg)/launch/spawn_robot_urdf_multiple.launch">
+        <arg name="x" value="-1.0" />
+        <arg name="y" value="-5.0" />
+        <arg name="z" value="0.0" />
+        <arg name="urdf_robot_file" value="$(find wamv_openai_ros_example)/urdf/simple_sphere_green.urdf" />
+        <arg name="robot_name" value="simple_sphere_1_start" />
+    </include>
+    
+    
+    <!-- Spawn Buoy 2 START-->
+    <include file="$(find spawn_robot_tools_pkg)/launch/spawn_robot_urdf_multiple.launch">
+        <arg name="x" value="-1.0" />
+        <arg name="y" value="5.0" />
+        <arg name="z" value="0.0" />
+        <arg name="urdf_robot_file" value="$(find wamv_openai_ros_example)/urdf/simple_sphere_red.urdf" />
+        <arg name="robot_name" value="simple_sphere_2_start" />
+    </include>
+    
+    
+    <!-- Spawn Buoy 1 END -->
+    <include file="$(find spawn_robot_tools_pkg)/launch/spawn_robot_urdf_multiple.launch">
+        <arg name="x" value="30.0" />
+        <arg name="y" value="-5.0" />
+        <arg name="z" value="0.0" />
+        <arg name="urdf_robot_file" value="$(find wamv_openai_ros_example)/urdf/simple_sphere_green.urdf" />
+        <arg name="robot_name" value="simple_sphere_1_end" />
+    </include>
+    
+    
+    <!-- Spawn Buoy 2 END -->
+    <include file="$(find spawn_robot_tools_pkg)/launch/spawn_robot_urdf_multiple.launch">
+        <arg name="x" value="30.0" />
+        <arg name="y" value="5.0" />
+        <arg name="z" value="0.0" />
+        <arg name="urdf_robot_file" value="$(find wamv_openai_ros_example)/urdf/simple_sphere_red.urdf" />
+        <arg name="robot_name" value="simple_sphere_2_end" />
+    </include>
+    
+</launch>

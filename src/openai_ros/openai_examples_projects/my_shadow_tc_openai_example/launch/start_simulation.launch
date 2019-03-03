@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find shadow_gazebo)/launch/main.launch"/>
+    </include>
+</launch>
+
+
+
+ 

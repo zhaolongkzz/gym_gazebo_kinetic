@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <!-- Distance based on test http://robotx.org/images/files/RobotX_2018_Task_Summary.pdf Demonstrate Navigation Control -->
+    <!-- Spawn Table -->
+    <include file="$(find my_sawyer_openai_example)/launch/spawn_table.launch"/>
+    
+    <!-- Spawn Block -->
+    <include file="$(find my_sawyer_openai_example)/launch/spawn_block.launch"/>
+    
+
+    
+</launch>

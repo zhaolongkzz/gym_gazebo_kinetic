@@ -1,0 +1,6 @@
+<launch>
+    <!-- We setup the Odom Publishing of the Block for the training rewarding -->
+    <node pkg="my_sawyer_openai_example" name="block_odom_pubish_node" type="block_odom_publisher.py" output="screen"/>
+    <!-- We setup the tf Publishing of the Block for the training rewarding -->
+    <node pkg="my_sawyer_openai_example" name="block_tf_pubish_node" type="block_tf_publisher.py" output="screen"/>
+</launch>

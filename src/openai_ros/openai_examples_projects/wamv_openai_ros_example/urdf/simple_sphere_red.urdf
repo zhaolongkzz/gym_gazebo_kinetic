@@ -1,0 +1,60 @@
+<robot name="simple_sphere">
+
+    <!-- Colours for RVIZ for geometric elements -->
+    <material name="blue">
+        <color rgba="0 0 0.8 1"/>
+    </material>
+    <material name="red">
+        <color rgba="0.8 0 0 1"/>
+    </material>
+    <material name="green">
+        <color rgba="0 0.8 0 1"/>
+    </material>
+    <material name="grey">
+        <color rgba="0.75 0.75 0.75 1"/>
+    </material>
+    <material name="white">
+        <color rgba="1.0 1.0 1.0 1"/>
+    </material>
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+
+	<!-- * * * Link Definitions * * * -->
+	<!-- * * * Size based on https://www.polyformus.com/buoys/a-series  A-5 * * * -->
+
+    <link name="world" />
+    
+    <link name="simple_sphere_base_link">
+ 	    <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1.0" />
+            <inertia ixx="0.00576" ixy="0.0" ixz="0.0" iyy="0.00576" iyz="0.0" izz="0.00576"/>
+        </inertial>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.343"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin rpy="0.0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <sphere radius="0.343"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+    </link>
+    
+    <gazebo reference="simple_sphere_base_link" type='ode'>
+        <material>Gazebo/Red</material>
+    </gazebo>
+    
+    <joint name="world_joint"  type="fixed">
+        <origin xyz="0 0 0.0" rpy="0 0 0" />
+        <parent link="world"/>
+        <child link="simple_sphere_base_link"/>
+    </joint>
+
+</robot>

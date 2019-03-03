@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/install
+
+Name: moving_cube_training
+Description: Description of moving_cube_training
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zzl/gym_ws/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+<launch>
+    <!-- Spawn Buoys -->
+    <include file="$(find wamv_openai_ros_example)/launch/spawn_task_buoys.launch"/>
+    <!-- This version uses the openai_ros environments -->
+    <rosparam command="load" file="$(find wamv_openai_ros_example)/config/vmrc_openai_qlearn_params.yaml" />
+    <!-- Launch the training system -->
+    <node pkg="wamv_openai_ros_example" name="vmrc_nav_twosets_buoys_qlearn" type="start_qlearning.py" output="screen"/>
+</launch>

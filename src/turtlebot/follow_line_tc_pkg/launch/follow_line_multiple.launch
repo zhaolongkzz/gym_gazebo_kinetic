@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- Here you can use various scripts, depending on how complex you want traking but they will be without pid -->
+  <node name="line_following_node" pkg="follow_line_tc_pkg" type="follow_line_step_multiple.py" output="screen"/>
+</launch>

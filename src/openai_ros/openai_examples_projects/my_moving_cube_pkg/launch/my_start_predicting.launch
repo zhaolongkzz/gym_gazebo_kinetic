@@ -1,0 +1,5 @@
+<launch>
+    <rosparam command="load" file="$(find my_moving_cube_pkg)/config/my_one_disk_walk_openai_params_deepQ.yaml" />
+    <!-- Launch the training system -->
+    <node pkg="my_moving_cube_pkg" name="movingcube_gym" type="my_start_predicting.py" output="screen"/>
+</launch>

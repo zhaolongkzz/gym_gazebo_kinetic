@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="line_following_node" pkg="follow_line_tc_pkg" type="follow_line_step_hsv.py" output="screen"/>
+</launch>

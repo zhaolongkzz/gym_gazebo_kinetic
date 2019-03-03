@@ -1,0 +1,8 @@
+<launch>
+    <!-- Spawn Objects needed -->
+    <include file="$(find my_sawyer_openai_example)/launch/spawn_block_table.launch"/>
+    
+    <!-- We start the Block Odom and TF publish for control purposes -->
+    <include file="$(find my_sawyer_openai_example)/launch/setup_block_systems_env.launch"/>
+    
+</launch>

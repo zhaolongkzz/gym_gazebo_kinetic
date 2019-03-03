@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- This version uses the openai_ros environments -->
+    <rosparam command="load" file="$(find husarion_openai_ros_example)/config/husarion_openai_qlearn_params.yaml" />
+    <!-- Launch the training system -->
+    <node pkg="husarion_openai_ros_example" name="hopper_stay_up_qlearn" type="start_qlearning.py" output="screen"/>
+</launch>

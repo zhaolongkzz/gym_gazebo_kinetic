@@ -1,0 +1,6 @@
+<launch>
+    <!-- We setup the learning env -->
+    <include file="$(find my_sawyer_openai_example)/launch/setup_learning_env.launch"/>
+    <!-- Launch the training system -->
+   <node pkg="my_sawyer_openai_example" name="sawyer_learn_to_pick_cube_qlearn" type="start_qlearning.py" output="screen"/>
+</launch>

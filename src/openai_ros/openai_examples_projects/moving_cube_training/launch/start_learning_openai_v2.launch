@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- Load Keras AI learning Parameters -->
+    <rosparam command="load" file="$(find moving_cube_training)/config/config_v2.yaml" />
+    <!-- Launch the training system -->
+    <node pkg="moving_cube_training" name="moving_cube_training" type="start_learning_openairos_v2.py" output="screen"/>
+</launch>

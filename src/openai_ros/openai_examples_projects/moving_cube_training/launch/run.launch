@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find moving_cube_description)/launch/spawn_moving_cube.launch"/>
+     <include file="$(find moving_cube_description)/launch/moving_cube_control.launch"/>
+    <!-- This version uses the openai_ros environments -->
+    <rosparam command="load" file="$(find moving_cube_training)/config/config.yaml" />
+    <!-- Launch the training system -->
+    <node pkg="moving_cube_training" name="moving_cube_training" type="run.py" output="screen"/>
+</launch>

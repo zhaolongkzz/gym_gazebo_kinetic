@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/install
+
+Name: my_parrotdrone_openai_example
+Description: Description of my_parrotdrone_openai_example
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zzl/gym_ws/install/lib 
+Requires: 

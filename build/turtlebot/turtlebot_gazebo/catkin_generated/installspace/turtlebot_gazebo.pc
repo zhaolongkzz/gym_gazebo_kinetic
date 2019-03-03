@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/install
+
+Name: turtlebot_gazebo
+Description: Description of turtlebot_gazebo
+Version: 2.2.2
+Cflags: 
+Libs: -L/home/zzl/gym_ws/install/lib 
+Requires: 

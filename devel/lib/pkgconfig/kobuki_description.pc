@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/devel
+
+Name: kobuki_description
+Description: Description of kobuki_description
+Version: 0.6.6
+Cflags: 
+Libs: -L/home/zzl/gym_ws/devel/lib 
+Requires: urdf xacro

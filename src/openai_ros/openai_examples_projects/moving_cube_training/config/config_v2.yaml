@@ -1,0 +1,37 @@
+moving_cube: #namespace
+
+    # OpenAI_ROS Task_Robot_ENV Name
+    task_and_robot_environment_name: 'MovingCubeOneDiskWalk-v0'
+
+    # Learning Params
+    n_observations: 6
+    n_actions: 3 # Number of actions used by algorithm and task
+    episodes_training: 300
+    episodes_running: 10
+    n_win_ticks: 30 # If the mean of rewards is bigger than this and have passed min_episodes, the task is considered finished
+    min_episodes: 10
+    gamma: 1.0 # future rewards value 0 none 1 a lot
+    epsilon: 1.0 # exploration, 0 none 1 a lot
+    epsilon_min: 0.01 # minimum value that epsilon can have
+    epsilon_decay: 0.98 # how we reduse the exploration
+    alpha: 0.10 # Learning Rate
+    alpha_decay: 0.01
+    batch_size: 64 # maximum size of the batches sampled from memory
+    monitor: True
+    quiet: False
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

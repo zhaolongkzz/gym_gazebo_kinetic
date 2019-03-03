@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find my_legged_robots_sims)/launch/main.launch"/>
+    </include>
+</launch>
+
+
+ 

@@ -1,0 +1,5 @@
+gym_myenv.egg-info/PKG-INFO
+gym_myenv.egg-info/SOURCES.txt
+gym_myenv.egg-info/dependency_links.txt
+gym_myenv.egg-info/requires.txt
+gym_myenv.egg-info/top_level.txt

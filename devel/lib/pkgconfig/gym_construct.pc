@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/devel
+
+Name: gym_construct
+Description: Description of gym_construct
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zzl/gym_ws/devel/lib 
+Requires: 

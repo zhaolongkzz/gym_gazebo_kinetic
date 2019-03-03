@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch> 
+
+<include file="$(find turtlebot_gazebo)/launch/main.launch">
+    <arg name="world_file"  value="$(find follow_line_tc_pkg)/worlds/follow_line.world"/>
+</include>
+
+</launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- We setup the learning env -->
+    <include file="$(find iriwam_openai_ros_example)/launch/setup_learning_env.launch"/>
+    
+    <!-- This version uses the openai_ros environments -->
+    <rosparam command="load" file="$(find iriwam_openai_ros_example)/config/sawyer_openai_qlearn_params.yaml" />
+    <!-- Launch the training system -->
+    <node pkg="iriwam_openai_ros_example" name="iriwam_tcp_to_bowl_qlearn" type="start_qlearning.py" output="screen"/>
+</launch>

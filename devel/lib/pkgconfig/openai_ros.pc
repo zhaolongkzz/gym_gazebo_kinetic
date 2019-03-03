@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/devel
+
+Name: openai_ros
+Description: Description of openai_ros
+Version: 1.0.0
+Cflags: -I/home/zzl/gym_ws/devel/include
+Libs: -L/home/zzl/gym_ws/devel/lib 
+Requires: message_runtime rospy gazebo_msgs std_msgs geometry_msgs controller_manager_msgs

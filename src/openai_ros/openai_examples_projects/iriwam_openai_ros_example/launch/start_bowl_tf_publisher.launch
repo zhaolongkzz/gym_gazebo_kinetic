@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- We setup the Odom Publishing of the Block for the training rewarding -->
+    <node pkg="iriwam_openai_ros_example" name="block_odom_pubish_node" type="redbowl_odom_publisher.py" output="screen"/>
+    <!-- We setup the tf Publishing of the Block for the training rewarding -->
+    <node pkg="iriwam_openai_ros_example" name="block_tf_pubish_node" type="redbowl_tf_publisher.py" output="screen"/>
+</launch>

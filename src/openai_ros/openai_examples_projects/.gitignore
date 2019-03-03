@@ -1,0 +1,4 @@
+*.pyc
+turtle2_openai_ros_example/training_results
+husarion_openai_ros_example/training_results/
+my_turtlebot3_openai_example/training_results

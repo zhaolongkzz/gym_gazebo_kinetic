@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/install
+
+Name: wamv_openai_ros_example
+Description: Description of wamv_openai_ros_example
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zzl/gym_ws/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/zzl/gym_ws/install
+
+Name: turtlebot_description
+Description: Description of turtlebot_description
+Version: 2.3.11
+Cflags: 
+Libs: -L/home/zzl/gym_ws/install/lib 
+Requires: urdf xacro
