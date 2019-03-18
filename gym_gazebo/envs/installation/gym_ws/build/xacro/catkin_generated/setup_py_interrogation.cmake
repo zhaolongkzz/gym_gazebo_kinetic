@@ -1,0 +1,6 @@
+set(xacro_SETUP_PY_VERSION "1.9.5")
+set(xacro_SETUP_PY_SCRIPTS "")
+set(xacro_SETUP_PY_PACKAGES "xacro;xacro_jade")
+set(xacro_SETUP_PY_PACKAGE_DIRS "src/xacro;src/xacro_jade")
+set(xacro_SETUP_PY_MODULES "")
+set(xacro_SETUP_PY_MODULE_DIRS "")

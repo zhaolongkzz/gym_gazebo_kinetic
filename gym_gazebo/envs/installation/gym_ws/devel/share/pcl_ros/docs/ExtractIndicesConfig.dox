@@ -1,0 +1,6 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~negative" : \b [bool] Extract indices or the negative (all-indices) min: False, default: False, max: True
+

@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+
+Name: multiple_kobukis
+Description: Description of multiple_kobukis
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
+Requires: 

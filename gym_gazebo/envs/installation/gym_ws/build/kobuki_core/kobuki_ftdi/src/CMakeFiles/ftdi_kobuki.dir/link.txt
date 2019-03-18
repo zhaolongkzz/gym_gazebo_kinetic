@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/ftdi_kobuki.dir/ftdi_kobuki.cpp.o  -o /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/kobuki_ftdi/ftdi_kobuki -rdynamic -lftdi 

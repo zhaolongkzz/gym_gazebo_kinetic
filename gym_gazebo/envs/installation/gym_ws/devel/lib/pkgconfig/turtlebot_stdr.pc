@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+
+Name: turtlebot_stdr
+Description: Description of turtlebot_stdr
+Version: 2.2.3
+Cflags: 
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
+Requires: 

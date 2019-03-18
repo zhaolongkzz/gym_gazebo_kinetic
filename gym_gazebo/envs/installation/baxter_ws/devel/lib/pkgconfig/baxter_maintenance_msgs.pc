@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/devel
+
+Name: baxter_maintenance_msgs
+Description: Description of baxter_maintenance_msgs
+Version: 1.2.0
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/devel/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/devel/lib 
+Requires: message_runtime std_msgs

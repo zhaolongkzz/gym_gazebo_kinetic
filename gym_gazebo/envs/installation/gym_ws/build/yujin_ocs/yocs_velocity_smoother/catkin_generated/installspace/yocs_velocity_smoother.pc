@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+
+Name: yocs_velocity_smoother
+Description: Description of yocs_velocity_smoother
+Version: 0.8.2
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lyocs_velocity_smoother_nodelet
+Requires: roscpp pluginlib nodelet ecl_threads dynamic_reconfigure geometry_msgs nav_msgs

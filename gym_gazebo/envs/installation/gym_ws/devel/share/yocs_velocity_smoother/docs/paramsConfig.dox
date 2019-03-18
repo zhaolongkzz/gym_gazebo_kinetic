@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~speed_lim_v" : \b [double] Maximum linear velocity min: 0.0, default: 1.0, max: 10.0
+- \b "~speed_lim_w" : \b [double] Maximum angular velocity min: 0.0, default: 5.0, max: 10.0
+- \b "~accel_lim_v" : \b [double] Maximum linear acceleration min: 0.0, default: 0.5, max: 10.0
+- \b "~accel_lim_w" : \b [double] Maximum angular acceleration min: 0.0, default: 2.5, max: 10.0
+- \b "~decel_factor" : \b [double] Deceleration to acceleration ratio min: 0.0, default: 1.0, max: 10.0
+

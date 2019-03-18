@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+
+Name: transmission_interface
+Description: Description of transmission_interface
+Version: 0.9.7
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ros_control/transmission_interface/include -I/usr/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -ltransmission_interface_parser -ltransmission_interface_loader -ltransmission_interface_loader_plugins /usr/lib/x86_64-linux-gnu/libtinyxml.so
+Requires: pluginlib resource_retriever roscpp

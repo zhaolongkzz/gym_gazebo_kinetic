@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+
+Name: kobuki_testsuite
+Description: Description of kobuki_testsuite
+Version: 0.7.6
+Cflags: 
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib 
+Requires: 

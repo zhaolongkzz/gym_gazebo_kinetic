@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~gaussian_noise" : \b [double] Standard deviation of the additive white Gaussian noise min: 0.0, default: 0.0, max: 10.0
+- \b "~offset" : \b [double] Zero-offset of the published sensor signal min: -10.0, default: 0.0, max: 10.0
+- \b "~drift" : \b [double] Standard deviation of the sensor drift min: 0.0, default: 0.0, max: 10.0
+- \b "~drift_frequency" : \b [double] Reciprocal of the time constant of the first-order drift model in Hz min: 0.0, default: 0.0, max: 1.0
+- \b "~scale_error" : \b [double] Scale error min: 0.0, default: 1.0, max: 2.0
+

@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+
+Name: ecl_linear_algebra
+Description: Description of ecl_linear_algebra
+Version: 0.61.18
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include -I/opt/ros/kinetic/share/sophus/../../include -I/usr/include/eigen3
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lecl_linear_algebra
+Requires: ecl_build ecl_eigen ecl_exceptions ecl_formatters ecl_math

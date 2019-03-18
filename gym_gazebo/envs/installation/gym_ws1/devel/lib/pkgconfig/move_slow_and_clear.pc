@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+
+Name: move_slow_and_clear
+Description: Description of move_slow_and_clear
+Version: 1.14.4
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/move_slow_and_clear/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lmove_slow_and_clear
+Requires: geometry_msgs nav_core pluginlib roscpp

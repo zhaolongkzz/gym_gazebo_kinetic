@@ -1,0 +1,6 @@
+set(create_node_SETUP_PY_VERSION "2.3.1")
+set(create_node_SETUP_PY_SCRIPTS "")
+set(create_node_SETUP_PY_PACKAGES "create_node")
+set(create_node_SETUP_PY_PACKAGE_DIRS "src/create_node")
+set(create_node_SETUP_PY_MODULES "")
+set(create_node_SETUP_PY_MODULE_DIRS "")

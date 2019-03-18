@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+
+Name: ecl_eigen
+Description: Description of ecl_eigen
+Version: 0.61.18
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_eigen/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/usr/include/eigen3
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
+Requires: 

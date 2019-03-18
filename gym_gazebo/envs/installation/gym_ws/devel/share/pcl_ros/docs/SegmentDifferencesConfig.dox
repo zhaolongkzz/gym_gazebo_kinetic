@@ -1,0 +1,6 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~distance_threshold" : \b [double] The distance tolerance as a measure in the L2 Euclidean space between corresponding points. min: 0.0, default: 0.0, max: 2.0
+

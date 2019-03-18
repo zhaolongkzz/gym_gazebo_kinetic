@@ -1,0 +1,16 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~update_rate" : \b [double] Polling rate for the irobot create. min: 5.0, default: 30.0, max: 30.0
+- \b "~drive_mode" : \b [str] The possible drive modes (twist, turtle, drive). min: , default: twist, max: 
+- \b "~cmd_vel_timeout" : \b [double] How long to wait before timing out on a velocity command.. min: 0.0, default: 0.6, max: 1.0
+- \b "~stop_motors_on_bump" : \b [bool] Stops motors when the bumps sensor is hit. min: False, default: True, max: True
+- \b "~has_gyro" : \b [bool] Enables or disables the gyro. min: False, default: True, max: True
+- \b "~gyro_scale_correction" : \b [double] Scaling factor for correct gyro operation. min: 0.0, default: 1.35, max: 6.0
+- \b "~gyro_measurement_range" : \b [double] Measurement range supported by gyro. min: 0.0, default: 150.0, max: 300.0
+- \b "~odom_angular_scale_correction" : \b [double] A correction applied to the computation of the rotation in the odometry. min: 0.0, default: 1.0, max: 3.0
+- \b "~odom_linear_scale_correction" : \b [double] A correction applied to the computation of the translation in odometry. min: 0.0, default: 1.0, max: 3.0
+- \b "~min_abs_yaw_vel" : \b [double] Minimum angular velocity of the TurtleBot. min: 0.0, default: 0, max: 3.0
+- \b "~max_abs_yaw_vel" : \b [double] Maximum angular velocity of the TurtleBot. min: 0.0, default: 0, max: 3.0
+

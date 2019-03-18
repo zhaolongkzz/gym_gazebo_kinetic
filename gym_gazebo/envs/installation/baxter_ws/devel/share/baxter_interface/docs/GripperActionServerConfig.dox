@@ -1,0 +1,19 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~left_gripper_timeout" : \b [double] left_gripper - Timeout (Seconds) to achieve command or determined gripping min: -1.0, default: 5.0, max: 20.0
+- \b "~left_gripper_goal" : \b [double] left_gripper - Electric Gripper - Maximum final error min: 0.0, default: 5.0, max: 100.0
+- \b "~left_gripper_velocity" : \b [double] left_gripper - Electric Gripper - Velocity min: 0.0, default: 50.0, max: 100.0
+- \b "~left_gripper_moving_force" : \b [double] left_gripper - Electric Gripper - Force threshold. Grip achieved when surpassed. min: 0.0, default: 40.0, max: 100.0
+- \b "~left_gripper_holding_force" : \b [double] left_gripper - Electric Gripper - Holding force applied when gripping/after motion. min: 0.0, default: 30.0, max: 100.0
+- \b "~left_gripper_vacuum_threshold" : \b [double] left_gripper - Suction Gripper - Vacuum threshold. Grip achieved when surpassed. min: 0.0, default: 18.0, max: 100.0
+- \b "~left_gripper_blow_off" : \b [double] left_gripper - Suction Gripper - When suction ceased, seconds of blown air. min: 0.0, default: 0.0, max: 100.0
+- \b "~right_gripper_timeout" : \b [double] right_gripper - Timeout (Seconds) to achieve command or determined gripping min: -1.0, default: 5.0, max: 20.0
+- \b "~right_gripper_goal" : \b [double] right_gripper - Electric Gripper - Maximum final error min: 0.0, default: 5.0, max: 100.0
+- \b "~right_gripper_velocity" : \b [double] right_gripper - Electric Gripper - Velocity min: 0.0, default: 50.0, max: 100.0
+- \b "~right_gripper_moving_force" : \b [double] right_gripper - Electric Gripper - Force threshold. Grip achieved when surpassed. min: 0.0, default: 40.0, max: 100.0
+- \b "~right_gripper_holding_force" : \b [double] right_gripper - Electric Gripper - Holding force applied when gripping/after motion. min: 0.0, default: 30.0, max: 100.0
+- \b "~right_gripper_vacuum_threshold" : \b [double] right_gripper - Suction Gripper - Vacuum threshold. Grip achieved when surpassed. min: 0.0, default: 18.0, max: 100.0
+- \b "~right_gripper_blow_off" : \b [double] right_gripper - Suction Gripper - When suction ceased, seconds of blown air. min: 0.0, default: 0.0, max: 100.0
+

@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~timeout" : \b [double]  - Timeout (Seconds) to achieve command min: -1.0, default: 5.0, max: 20.0
+- \b "~goal" : \b [double]  - Maximum final error min: 0.0, default: 0.1396263401, max: 1.57
+

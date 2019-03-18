@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/install
+
+Name: baxter_tools
+Description: Description of baxter_tools
+Version: 1.2.0
+Cflags: 
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/install/lib 
+Requires: rospy sensor_msgs geometry_msgs cv_bridge baxter_interface baxter_core_msgs baxter_maintenance_msgs

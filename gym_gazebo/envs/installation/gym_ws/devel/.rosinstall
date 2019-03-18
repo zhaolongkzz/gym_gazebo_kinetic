@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/setup.sh

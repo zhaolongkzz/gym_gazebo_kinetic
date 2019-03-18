@@ -1,0 +1,7 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pcl_ros" pkg="pcl_ros" type="pcl_ros">
+  <param name="distance_threshold" type="double" value="0.0" />
+</node>
+\endverbatim
+

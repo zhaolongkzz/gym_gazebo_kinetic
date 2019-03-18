@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+
+Name: kobuki_dock_drive
+Description: Description of kobuki_dock_drive
+Version: 0.6.5
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lkobuki_dock_drive
+Requires: ecl_threads ecl_geometry ecl_linear_algebra

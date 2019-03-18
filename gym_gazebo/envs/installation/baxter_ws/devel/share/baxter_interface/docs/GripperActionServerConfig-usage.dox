@@ -1,0 +1,20 @@
+\subsubsection usage Usage
+\verbatim
+<node name="" pkg="baxter_interface" type="">
+  <param name="left_gripper_timeout" type="double" value="5.0" />
+  <param name="left_gripper_goal" type="double" value="5.0" />
+  <param name="left_gripper_velocity" type="double" value="50.0" />
+  <param name="left_gripper_moving_force" type="double" value="40.0" />
+  <param name="left_gripper_holding_force" type="double" value="30.0" />
+  <param name="left_gripper_vacuum_threshold" type="double" value="18.0" />
+  <param name="left_gripper_blow_off" type="double" value="0.0" />
+  <param name="right_gripper_timeout" type="double" value="5.0" />
+  <param name="right_gripper_goal" type="double" value="5.0" />
+  <param name="right_gripper_velocity" type="double" value="50.0" />
+  <param name="right_gripper_moving_force" type="double" value="40.0" />
+  <param name="right_gripper_holding_force" type="double" value="30.0" />
+  <param name="right_gripper_vacuum_threshold" type="double" value="18.0" />
+  <param name="right_gripper_blow_off" type="double" value="0.0" />
+</node>
+\endverbatim
+

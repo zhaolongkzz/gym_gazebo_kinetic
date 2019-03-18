@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+
+Name: ecl_mobile_robot
+Description: Description of ecl_mobile_robot
+Version: 0.60.3
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lecl_mobile_robot
+Requires: ecl_build ecl_errors ecl_geometry ecl_math ecl_formatters ecl_linear_algebra

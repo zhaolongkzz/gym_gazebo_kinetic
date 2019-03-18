@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>ecl_license</name>
+  <version>0.61.6</version>
+  <description>
+     Maintains the ecl licenses and also provides an install
+     target for deploying licenses with the ecl libraries.
+  </description>
+  <author email="d.stonier@gmail.com">Daniel Stonier</author>
+  <maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+  <license>BSD</license>
+  <url type="website">http://wiki.ros.org/ecl_license</url>
+  <url type="repository">https://github.com/stonier/ecl_tools</url>
+  <url type="bugtracker">https://github.com/stonier/ecl_tools/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
+
+

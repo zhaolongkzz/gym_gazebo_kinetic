@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="yocs_cmd_vel_mux_reload" pkg="yocs_cmd_vel_mux" type="yocs_cmd_vel_mux_reload">
+  <param name="yaml_cfg_file" type="str" value="" />
+  <param name="yaml_cfg_data" type="str" value="" />
+</node>
+\endverbatim
+

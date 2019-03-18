@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pcl_ros" pkg="pcl_ros" type="pcl_ros">
+  <param name="mean_k" type="int" value="2" />
+  <param name="stddev" type="double" value="0.0" />
+  <param name="negative" type="bool" value="False" />
+</node>
+\endverbatim
+

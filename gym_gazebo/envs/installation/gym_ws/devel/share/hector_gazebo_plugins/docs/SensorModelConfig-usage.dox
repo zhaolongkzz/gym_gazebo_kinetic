@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="hector_gazebo_plugins" pkg="hector_gazebo_plugins" type="hector_gazebo_plugins">
+  <param name="gaussian_noise" type="double" value="0.0" />
+  <param name="offset" type="double" value="0.0" />
+  <param name="drift" type="double" value="0.0" />
+  <param name="drift_frequency" type="double" value="0.0" />
+  <param name="scale_error" type="double" value="1.0" />
+</node>
+\endverbatim
+

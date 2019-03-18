@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+
+Name: kobuki_random_walker
+Description: Description of kobuki_random_walker
+Version: 0.6.8
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lkobuki_random_walker_nodelet
+Requires: ecl_threads geometry_msgs kobuki_msgs nodelet pluginlib roscpp std_msgs yocs_controllers

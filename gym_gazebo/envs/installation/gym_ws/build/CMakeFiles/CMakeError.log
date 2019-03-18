@@ -1,0 +1,111 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_211ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_211ce.dir/build.make CMakeFiles/cmTC_211ce.dir/build
+make[1]: Entering directory '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_211ce.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_211ce.dir/CheckSymbolExists.c.o   -c /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_211ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_211ce.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_211ce.dir/CheckSymbolExists.c.o  -o cmTC_211ce -rdynamic 
+CMakeFiles/cmTC_211ce.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_211ce.dir/build.make:97: recipe for target 'cmTC_211ce' failed
+make[1]: *** [cmTC_211ce] Error 1
+make[1]: Leaving directory '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_211ce/fast' failed
+make: *** [cmTC_211ce/fast] Error 2
+
+File /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d1b14/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d1b14.dir/build.make CMakeFiles/cmTC_d1b14.dir/build
+make[1]: Entering directory '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d1b14.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d1b14.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d1b14
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1b14.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d1b14.dir/CheckFunctionExists.c.o  -o cmTC_d1b14 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d1b14.dir/build.make:97: recipe for target 'cmTC_d1b14' failed
+make[1]: *** [cmTC_d1b14] Error 1
+make[1]: Leaving directory '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d1b14/fast' failed
+make: *** [cmTC_d1b14/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ef2ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ef2ed.dir/build.make CMakeFiles/cmTC_ef2ed.dir/build
+make[1]: Entering directory '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef2ed.dir/TestEndianess.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ef2ed.dir/TestEndianess.c.o   -c /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_ef2ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef2ed.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ef2ed.dir/TestEndianess.c.o  -o cmTC_ef2ed -rdynamic 
+make[1]: Leaving directory '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file pgm.h exists failed with the following output:
+Change Dir: /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_153ee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_153ee.dir/build.make CMakeFiles/cmTC_153ee.dir/build
+make[1]: Entering directory '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_153ee.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_153ee.dir/CheckIncludeFile.cxx.o -c /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:17: fatal error: pgm.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_153ee.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_153ee.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_153ee.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_153ee/fast' failed
+make: *** [cmTC_153ee/fast] Error 2
+
+

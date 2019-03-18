@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pcl_ros" pkg="pcl_ros" type="pcl_ros">
+  <param name="spatial_locator" type="int" value="0" />
+  <param name="search_radius" type="double" value="0.02" />
+  <param name="use_polynomial_fit" type="bool" value="True" />
+  <param name="polynomial_order" type="int" value="2" />
+  <param name="gaussian_parameter" type="double" value="0.02" />
+</node>
+\endverbatim
+

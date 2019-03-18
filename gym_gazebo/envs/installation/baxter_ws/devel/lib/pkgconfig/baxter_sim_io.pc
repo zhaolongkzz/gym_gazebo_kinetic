@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/devel
+
+Name: baxter_sim_io
+Description: Description of baxter_sim_io
+Version: 1.2.12
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/src/baxter_simulator/baxter_sim_io/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/devel/lib -lbaxter_sim_io
+Requires: baxter_core_msgs

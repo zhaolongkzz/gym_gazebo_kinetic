@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~height_min" : \b [double] The minimum allowed distance to the plane model value a point will be considered from min: -10.0, default: 0.0, max: 10.0
+- \b "~height_max" : \b [double] The maximum allowed distance to the plane model value a point will be considered from min: -10.0, default: 0.5, max: 10.0
+

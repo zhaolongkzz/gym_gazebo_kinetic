@@ -1,0 +1,16 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pcl_ros" pkg="pcl_ros" type="pcl_ros">
+  <param name="min_x" type="double" value="-1.0" />
+  <param name="max_x" type="double" value="1.0" />
+  <param name="min_y" type="double" value="-1.0" />
+  <param name="max_y" type="double" value="1.0" />
+  <param name="min_z" type="double" value="-1.0" />
+  <param name="max_z" type="double" value="1.0" />
+  <param name="keep_organized" type="bool" value="False" />
+  <param name="negative" type="bool" value="False" />
+  <param name="input_frame" type="str" value="" />
+  <param name="output_frame" type="str" value="" />
+</node>
+\endverbatim
+

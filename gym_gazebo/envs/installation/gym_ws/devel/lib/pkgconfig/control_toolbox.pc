@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+
+Name: control_toolbox
+Description: Description of control_toolbox
+Version: 1.13.3
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/control_toolbox/include -I/usr/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lcontrol_toolbox /usr/lib/x86_64-linux-gnu/libtinyxml.so
+Requires: roscpp dynamic_reconfigure realtime_tools message_runtime std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/install
+
+Name: baxter_sim_controllers
+Description: Description of baxter_sim_controllers
+Version: 1.2.12
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/install/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/install/lib -lbaxter_sim_controllers
+Requires: controller_interface control_toolbox effort_controllers baxter_core_msgs

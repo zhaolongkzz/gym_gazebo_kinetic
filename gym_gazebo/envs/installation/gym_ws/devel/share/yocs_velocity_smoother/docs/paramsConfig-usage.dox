@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="velocity_smoother_configure" pkg="yocs_velocity_smoother" type="velocity_smoother_configure">
+  <param name="speed_lim_v" type="double" value="1.0" />
+  <param name="speed_lim_w" type="double" value="5.0" />
+  <param name="accel_lim_v" type="double" value="0.5" />
+  <param name="accel_lim_w" type="double" value="2.5" />
+  <param name="decel_factor" type="double" value="1.0" />
+</node>
+\endverbatim
+

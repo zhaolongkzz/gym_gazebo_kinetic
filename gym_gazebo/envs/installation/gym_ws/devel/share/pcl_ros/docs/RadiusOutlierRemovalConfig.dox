@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~radius_search" : \b [double] Radius of the sphere that will determine which points are neighbors. min: 0.0, default: 0.1, max: 10.0
+- \b "~min_neighbors" : \b [int] The number of neighbors that need to be present in order to be classified as an inlier. min: 0, default: 5, max: 1000
+

@@ -1,0 +1,15 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~max_iterations" : \b [int] The maximum number of iterations the algorithm will run for min: 0, default: 50, max: 100000
+- \b "~probability" : \b [double] The desired probability of choosing at least one sample free from outliers min: 0.5, default: 0.99, max: 0.99
+- \b "~distance_threshold" : \b [double] The distance to model threshold min: 0.0, default: 0.02, max: 1.0
+- \b "~optimize_coefficients" : \b [bool] Model coefficient refinement min: False, default: True, max: True
+- \b "~radius_min" : \b [double] The minimum allowed model radius (where applicable) min: 0.0, default: 0.0, max: 1.0
+- \b "~radius_max" : \b [double] The maximum allowed model radius (where applicable) min: 0.0, default: 0.05, max: 1.0
+- \b "~eps_angle" : \b [double] The maximum allowed difference between the model normal and the given axis in radians. min: 0.0, default: 0.17, max: 1.5707
+- \b "~min_inliers" : \b [int] The minimum number of inliers a model must have in order to be considered valid. min: 0, default: 0, max: 100000
+- \b "~input_frame" : \b [str] The input TF frame the data should be transformed into, if input.header.frame_id is different. min: , default: , max: 
+- \b "~output_frame" : \b [str] The output TF frame the data should be transformed into, if input.header.frame_id is different. min: , default: , max: 
+

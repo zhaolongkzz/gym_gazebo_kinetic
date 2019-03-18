@@ -1,0 +1,6 @@
+set(yocs_localization_manager_SETUP_PY_VERSION "0.8.2")
+set(yocs_localization_manager_SETUP_PY_SCRIPTS "")
+set(yocs_localization_manager_SETUP_PY_PACKAGES "yocs_localization_manager")
+set(yocs_localization_manager_SETUP_PY_PACKAGE_DIRS "src/yocs_localization_manager")
+set(yocs_localization_manager_SETUP_PY_MODULES "")
+set(yocs_localization_manager_SETUP_PY_MODULE_DIRS "")

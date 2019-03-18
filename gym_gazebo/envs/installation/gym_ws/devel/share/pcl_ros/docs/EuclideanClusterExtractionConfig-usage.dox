@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pcl_ros" pkg="pcl_ros" type="pcl_ros">
+  <param name="cluster_tolerance" type="double" value="0.05" />
+  <param name="cluster_min_size" type="int" value="1" />
+  <param name="cluster_max_size" type="int" value="2147483647" />
+  <param name="max_clusters" type="int" value="2147483647" />
+</node>
+\endverbatim
+

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/get_serial_number.dir/get_serial_number.cpp.o  -o /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/kobuki_ftdi/get_serial_number -rdynamic -lusb 

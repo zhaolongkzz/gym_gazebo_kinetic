@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="control_toolbox" pkg="control_toolbox" type="control_toolbox">
+  <param name="p" type="double" value="10.0" />
+  <param name="i" type="double" value="0.1" />
+  <param name="d" type="double" value="1.0" />
+  <param name="i_clamp_min" type="double" value="-10.0" />
+  <param name="i_clamp_max" type="double" value="10.0" />
+</node>
+\endverbatim
+

@@ -1,0 +1,10 @@
+(cl:defpackage polled_camera-srv
+  (:use )
+  (:export
+   "GETPOLLEDIMAGE"
+   "<GETPOLLEDIMAGE-REQUEST>"
+   "GETPOLLEDIMAGE-REQUEST"
+   "<GETPOLLEDIMAGE-RESPONSE>"
+   "GETPOLLEDIMAGE-RESPONSE"
+  ))
+

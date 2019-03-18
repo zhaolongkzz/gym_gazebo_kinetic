@@ -1,0 +1,8 @@
+prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+
+Name: clear_costmap_recovery
+Description: Description of clear_costmap_recovery
+Version: 1.14.4
+Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/clear_costmap_recovery/include
+Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lclear_costmap_recovery
+Requires: costmap_2d nav_core pluginlib roscpp tf

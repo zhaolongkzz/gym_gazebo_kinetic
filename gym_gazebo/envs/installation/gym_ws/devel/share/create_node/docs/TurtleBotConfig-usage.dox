@@ -1,0 +1,17 @@
+\subsubsection usage Usage
+\verbatim
+<node name="TurtleBot" pkg="create_node" type="TurtleBot">
+  <param name="update_rate" type="double" value="30.0" />
+  <param name="drive_mode" type="str" value="twist" />
+  <param name="cmd_vel_timeout" type="double" value="0.6" />
+  <param name="stop_motors_on_bump" type="bool" value="True" />
+  <param name="has_gyro" type="bool" value="True" />
+  <param name="gyro_scale_correction" type="double" value="1.35" />
+  <param name="gyro_measurement_range" type="double" value="150.0" />
+  <param name="odom_angular_scale_correction" type="double" value="1.0" />
+  <param name="odom_linear_scale_correction" type="double" value="1.0" />
+  <param name="min_abs_yaw_vel" type="double" value="0" />
+  <param name="max_abs_yaw_vel" type="double" value="0" />
+</node>
+\endverbatim
+

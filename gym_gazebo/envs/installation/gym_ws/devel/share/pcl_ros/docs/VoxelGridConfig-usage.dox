@@ -1,0 +1,14 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pcl_ros" pkg="pcl_ros" type="pcl_ros">
+  <param name="leaf_size" type="double" value="0.01" />
+  <param name="filter_field_name" type="str" value="z" />
+  <param name="filter_limit_min" type="double" value="0.0" />
+  <param name="filter_limit_max" type="double" value="1.0" />
+  <param name="filter_limit_negative" type="bool" value="False" />
+  <param name="keep_organized" type="bool" value="False" />
+  <param name="input_frame" type="str" value="" />
+  <param name="output_frame" type="str" value="" />
+</node>
+\endverbatim
+
