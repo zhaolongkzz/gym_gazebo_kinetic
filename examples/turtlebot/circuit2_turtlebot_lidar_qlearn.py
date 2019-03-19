@@ -8,7 +8,7 @@ import random
 
 import qlearn
 import liveplot
-import ipdb
+# import ipdb
 
 def render():
     render_skip = 0 #Skip first X episodes.

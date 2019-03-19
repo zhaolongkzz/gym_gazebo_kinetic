@@ -1,8 +1,0 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/install
-
-Name: baxter_core_msgs
-Description: Description of baxter_core_msgs
-Version: 1.2.0
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/baxter_ws/install/lib 
-Requires: message_runtime geometry_msgs sensor_msgs std_msgs
