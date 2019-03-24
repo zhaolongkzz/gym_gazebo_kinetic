@@ -217,7 +217,7 @@ log file: /home/zzl/.ros/log/1d6d2ca8-4a1b-11e9-827a-dca266407807/spawn_turtlebo
 [ INFO] [1552981624.054200732, 36.560000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""
 [ INFO] [1552981624.349576056, 36.560000000]: Starting plugin Kobuki(ns = //)!
 [ WARN] [1552981624.349658931, 36.560000000]: Kobuki(ns = //): missing <rosDebugLevel> default is na
-[ INFO] [1552981624.350724561, 36.560000000]: Kobuki(ns = //): <tf_prefix> = 
+[ INFO] [1552981624.350724561, 36.560000000]: Kobuki(ns = //): <tf_prefix> =
 [Dbg] [gazebo_ros_kobuki.cpp:63] Plugin model name: mobile_base
 [ INFO] [1552981624.350959655, 36.560000000]: Will publish tf. [mobile_base]
 [ INFO] [1552981624.367724433, 36.560000000]: Kobuki(ns = //): Advertise joint_states[joint_states]!
@@ -315,6 +315,13 @@ sudo apt-get install ros-kinetic-rqt-joint-trajectory-controller
 sudo apt-get install libignition-math3 libsdformat5
 sudo apt-get install gazebo8 libgazebo8
 sudo apt-get install ros-kinetic-gazebo8-*
+
+
+sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install gazebo7
+
 
 
 
@@ -443,7 +450,7 @@ conda install protobuf=3.5.2
 ```bash
 Checking for module 'libopenni2'
 --   No package 'libopenni2' found
--- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+-- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS)
 ** WARNING ** io features related to openni2 will be disabled
 ** WARNING ** io features related to pcap will be disabled
 ** WARNING ** io features related to png will be disabled
@@ -889,3 +896,14 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+
+
+
+/usr/include/gazebo-7/gazebo/msgs/msgs.hh:24:37: fatal error: ignition/math/Inertial.hh: No such file or directory
+
+sudo apt-get install libignition-math2-dev
+
+
+while processing /home/jim/gym_gazebo_kinetic/gym_gazebo/envs/installation/gym_ws/src/turtlebot_simulator/turtlebot_gazebo/launch/includes/kobuki.launch.xml:
+
+you should delete the "--inorder"
