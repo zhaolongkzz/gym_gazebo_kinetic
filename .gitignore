@@ -39,8 +39,10 @@ tutorial/*.html
 vizdoom.ini
 
 # Gazebo project files
-gym_ws/
-gym_ws/
+devel/
+build/
+gym_gazebo/envs/installation/README.md
+CMakeLists.txt
 apm/
 sophus/
 eeprom.bin

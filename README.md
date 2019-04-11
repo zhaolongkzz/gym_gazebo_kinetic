@@ -38,7 +38,7 @@ conda create -n gymenv python=2.7
 source activate gymenv
 ```
 
-Install gym anf gym-gazebo
+Install gym and gym-gazebo
 ```bash
 # install gym
 git clone https://github.com/openai/gym.git
@@ -51,7 +51,7 @@ cd ~/gym_gazebo_kinetic
 pip install -e .
 ```
 
-Here some package you need to install first in your conda environment, if not ,it will appear some errors when you run the code.
+Here some package you need to install first in your conda environment, if not, it will appear some errors when you run the code.
 ```bash
 conda install numpy matplotlib
 
@@ -89,7 +89,7 @@ ros-kinetic-pcl-ros \
 ros-kinetic-navigation
 ```
 
-Another dependencies and libraries:
+Other dependencies and libraries:
 ```bash
 # Failed to find libusb
 sudo apt-get install libusb-dev
