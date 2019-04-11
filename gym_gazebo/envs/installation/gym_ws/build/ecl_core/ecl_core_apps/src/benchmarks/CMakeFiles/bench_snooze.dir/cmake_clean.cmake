@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bench_snooze.dir/snooze.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_core_apps/bench_snooze.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_core_apps/bench_snooze"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_core_apps/bench_snooze.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_core_apps/bench_snooze"
 )
 
 # Per-language clean rules from dependency scanning.

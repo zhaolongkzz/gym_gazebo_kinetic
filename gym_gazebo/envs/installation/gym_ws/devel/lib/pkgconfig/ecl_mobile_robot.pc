@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
 
 Name: ecl_mobile_robot
 Description: Description of ecl_mobile_robot
 Version: 0.60.3
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_navigation/ecl_mobile_robot/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lecl_mobile_robot
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_navigation/ecl_mobile_robot/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lecl_mobile_robot
 Requires: ecl_build ecl_errors ecl_geometry ecl_math ecl_formatters ecl_linear_algebra

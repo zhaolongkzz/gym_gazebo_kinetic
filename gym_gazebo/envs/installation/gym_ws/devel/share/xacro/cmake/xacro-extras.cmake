@@ -1,5 +1,5 @@
 set(_xacro_py
-  /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/xacro/scripts/xacro
+  /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/xacro/scripts/xacro
 )
 
 macro(xacro_add_xacro_file input output)

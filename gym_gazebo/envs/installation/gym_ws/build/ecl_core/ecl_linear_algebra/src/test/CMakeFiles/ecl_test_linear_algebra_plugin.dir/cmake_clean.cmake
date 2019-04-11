@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ecl_test_linear_algebra_plugin.dir/plugin.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_linear_algebra/ecl_test_linear_algebra_plugin.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_linear_algebra/ecl_test_linear_algebra_plugin"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_linear_algebra/ecl_test_linear_algebra_plugin.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_linear_algebra/ecl_test_linear_algebra_plugin"
 )
 
 # Per-language clean rules from dependency scanning.

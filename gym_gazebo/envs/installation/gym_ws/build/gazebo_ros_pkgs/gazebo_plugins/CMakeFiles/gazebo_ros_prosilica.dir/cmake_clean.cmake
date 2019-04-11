@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_ros_prosilica.dir/src/gazebo_ros_prosilica.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libgazebo_ros_prosilica.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libgazebo_ros_prosilica.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libgazebo_ros_prosilica.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libgazebo_ros_prosilica.so"
 )
 
 # Per-language clean rules from dependency scanning.

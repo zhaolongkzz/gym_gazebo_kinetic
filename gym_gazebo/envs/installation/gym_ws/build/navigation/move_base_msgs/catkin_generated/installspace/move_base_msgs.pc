@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
 
 Name: move_base_msgs
 Description: Description of move_base_msgs
 Version: 1.12.16
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib 
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib 
 Requires: actionlib_msgs geometry_msgs message_runtime

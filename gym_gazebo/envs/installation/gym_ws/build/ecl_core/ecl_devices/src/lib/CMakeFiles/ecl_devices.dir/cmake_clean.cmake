@@ -12,8 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ecl_devices.dir/socket_client_pos.cpp.o"
   "CMakeFiles/ecl_devices.dir/socket_server_pos.cpp.o"
   "CMakeFiles/ecl_devices.dir/string.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libecl_devices.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libecl_devices.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libecl_devices.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libecl_devices.so"
 )
 
 # Per-language clean rules from dependency scanning.

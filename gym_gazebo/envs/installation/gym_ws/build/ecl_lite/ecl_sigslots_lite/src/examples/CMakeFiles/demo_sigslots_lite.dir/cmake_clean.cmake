@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo_sigslots_lite.dir/sigslots.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_sigslots_lite/demo_sigslots_lite.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_sigslots_lite/demo_sigslots_lite"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_sigslots_lite/demo_sigslots_lite.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_sigslots_lite/demo_sigslots_lite"
 )
 
 # Per-language clean rules from dependency scanning.

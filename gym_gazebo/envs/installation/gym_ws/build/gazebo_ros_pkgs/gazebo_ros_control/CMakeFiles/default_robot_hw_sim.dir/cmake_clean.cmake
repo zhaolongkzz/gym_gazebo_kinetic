@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/default_robot_hw_sim.dir/src/default_robot_hw_sim.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libdefault_robot_hw_sim.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libdefault_robot_hw_sim.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libdefault_robot_hw_sim.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libdefault_robot_hw_sim.so"
 )
 
 # Per-language clean rules from dependency scanning.

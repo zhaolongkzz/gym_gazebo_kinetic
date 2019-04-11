@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
 
 Name: gazebo_ros_control
 Description: Description of gazebo_ros_control
 Version: 2.4.16
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lgazebo_ros_control -ldefault_robot_hw_sim
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lgazebo_ros_control -ldefault_robot_hw_sim
 Requires: roscpp std_msgs controller_manager control_toolbox pluginlib hardware_interface transmission_interface joint_limits_interface urdf angles

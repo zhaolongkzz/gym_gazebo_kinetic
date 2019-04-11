@@ -2,7 +2,7 @@
 DEVELSPACE = 'FALSE' == 'TRUE'
 INSTALLSPACE = 'TRUE' == 'TRUE'
 
-CATKIN_DEVEL_PREFIX = '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel'
+CATKIN_DEVEL_PREFIX = '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel'
 
 CATKIN_GLOBAL_BIN_DESTINATION = 'bin'
 CATKIN_GLOBAL_ETC_DESTINATION = 'etc'
@@ -20,14 +20,14 @@ CATKIN_PACKAGE_LIBEXEC_DESTINATION = ''
 CATKIN_PACKAGE_PYTHON_DESTINATION = 'lib/python2.7/dist-packages/catkin_simple'
 CATKIN_PACKAGE_SHARE_DESTINATION = 'share/catkin_simple'
 
-CMAKE_BINARY_DIR = '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build'
-CMAKE_CURRENT_BINARY_DIR = '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/catkin_simple'
-CMAKE_CURRENT_SOURCE_DIR = '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/catkin_simple'
-CMAKE_INSTALL_PREFIX = '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install'
-CMAKE_SOURCE_DIR = '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src'
+CMAKE_BINARY_DIR = '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build'
+CMAKE_CURRENT_BINARY_DIR = '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/catkin_simple'
+CMAKE_CURRENT_SOURCE_DIR = '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/catkin_simple'
+CMAKE_INSTALL_PREFIX = '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install'
+CMAKE_SOURCE_DIR = '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src'
 
 PKG_CMAKE_DIR = '${catkin_simple_DIR}'
 
 PROJECT_NAME = 'catkin_simple'
-PROJECT_BINARY_DIR = '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/catkin_simple'
-PROJECT_SOURCE_DIR = '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/catkin_simple'
+PROJECT_BINARY_DIR = '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/catkin_simple'
+PROJECT_SOURCE_DIR = '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/catkin_simple'

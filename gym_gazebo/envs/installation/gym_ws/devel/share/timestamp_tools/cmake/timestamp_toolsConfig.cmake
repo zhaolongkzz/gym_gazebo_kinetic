@@ -67,14 +67,14 @@ set(timestamp_tools_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(timestamp_tools_SOURCE_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_base/timestamp_tools)
-  set(timestamp_tools_DEVEL_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel)
+  set(timestamp_tools_SOURCE_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_base/timestamp_tools)
+  set(timestamp_tools_DEVEL_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel)
   set(timestamp_tools_INSTALL_PREFIX "")
   set(timestamp_tools_PREFIX ${timestamp_tools_DEVEL_PREFIX})
 else()
   set(timestamp_tools_SOURCE_PREFIX "")
   set(timestamp_tools_DEVEL_PREFIX "")
-  set(timestamp_tools_INSTALL_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install)
+  set(timestamp_tools_INSTALL_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install)
   set(timestamp_tools_PREFIX ${timestamp_tools_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(timestamp_tools_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_base/timestamp_tools/include " STREQUAL " ")
+if(NOT "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_base/timestamp_tools/include " STREQUAL " ")
   set(timestamp_tools_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_base/timestamp_tools/include")
+  set(_include_dirs "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_base/timestamp_tools/include")
   if(NOT "https://github.com/ros-drivers/driver_common/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-drivers/driver_common/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://www.ros.org/wiki/timestamp_tools " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_b
         message(FATAL_ERROR "Project 'timestamp_tools' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'timestamp_tools' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_base/timestamp_tools/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'timestamp_tools' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/driver_base/timestamp_tools/${idir}'.  ${_report}")
     endif()
     _list_append_unique(timestamp_tools_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -38,7 +38,8 @@ tutorial/*.html
 vizdoom.ini
 
 # Gazebo project files
-catkin_ws/
+gym_ws/build
+gym_ws/devel
 apm/
 sophus/
 eeprom.bin

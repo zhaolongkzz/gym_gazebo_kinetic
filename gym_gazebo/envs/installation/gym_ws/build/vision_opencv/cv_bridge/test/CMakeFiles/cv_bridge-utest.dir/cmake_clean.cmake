@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cv_bridge-utest.dir/utest.cpp.o"
   "CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o"
   "CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/cv_bridge/cv_bridge-utest.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/cv_bridge/cv_bridge-utest"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/cv_bridge/cv_bridge-utest.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/cv_bridge/cv_bridge-utest"
 )
 
 # Per-language clean rules from dependency scanning.

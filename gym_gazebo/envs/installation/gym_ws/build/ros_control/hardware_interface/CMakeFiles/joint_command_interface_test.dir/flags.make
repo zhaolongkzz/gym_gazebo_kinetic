@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"hardware_interface\"
 
-CXX_INCLUDES = -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ros_control/hardware_interface/include 
+CXX_INCLUDES = -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ros_control/hardware_interface/include 
 

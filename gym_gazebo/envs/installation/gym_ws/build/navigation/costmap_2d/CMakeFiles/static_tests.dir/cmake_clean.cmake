@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/static_tests.dir/test/static_tests.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/static_tests.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/static_tests"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/static_tests.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/static_tests"
 )
 
 # Per-language clean rules from dependency scanning.

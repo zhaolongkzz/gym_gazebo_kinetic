@@ -67,14 +67,14 @@ set(gazebo_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(gazebo_msgs_SOURCE_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_msgs)
-  set(gazebo_msgs_DEVEL_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel)
+  set(gazebo_msgs_SOURCE_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_msgs)
+  set(gazebo_msgs_DEVEL_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel)
   set(gazebo_msgs_INSTALL_PREFIX "")
   set(gazebo_msgs_PREFIX ${gazebo_msgs_DEVEL_PREFIX})
 else()
   set(gazebo_msgs_SOURCE_PREFIX "")
   set(gazebo_msgs_DEVEL_PREFIX "")
-  set(gazebo_msgs_INSTALL_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install)
+  set(gazebo_msgs_INSTALL_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install)
   set(gazebo_msgs_PREFIX ${gazebo_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(gazebo_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include " STREQUAL " ")
+if(NOT "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include " STREQUAL " ")
   set(gazebo_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include")
+  set(_include_dirs "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include")
   if(NOT "https://github.com/ros-simulation/gazebo_ros_pkgs/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-simulation/gazebo_ros_pkgs/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://gazebosim.org/tutorials?cat=connect_ros " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/includ
         message(FATAL_ERROR "Project 'gazebo_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'gazebo_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'gazebo_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(gazebo_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

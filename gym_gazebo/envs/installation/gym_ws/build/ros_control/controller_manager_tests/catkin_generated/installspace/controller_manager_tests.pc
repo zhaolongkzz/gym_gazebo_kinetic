@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
 
 Name: controller_manager_tests
 Description: Description of controller_manager_tests
 Version: 0.9.7
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lcontroller_manager_tests
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lcontroller_manager_tests
 Requires: controller_manager controller_interface control_toolbox

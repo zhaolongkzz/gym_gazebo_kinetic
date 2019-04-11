@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ecl_test_tension_function.dir/tension_function.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_tension_function.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_tension_function"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_tension_function.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_tension_function"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bench_streams.dir/streams.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_core_apps/bench_streams.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_core_apps/bench_streams"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_core_apps/bench_streams.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_core_apps/bench_streams"
 )
 
 # Per-language clean rules from dependency scanning.

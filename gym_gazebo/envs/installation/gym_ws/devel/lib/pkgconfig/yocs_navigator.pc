@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
 
 Name: yocs_navigator
 Description: Description of yocs_navigator
 Version: 0.8.2
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/yujin_ocs/yocs_navigator/include -I/usr/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lyocs_basic_move_controller -lyocs_semantic_navigator /usr/lib/x86_64-linux-gnu/libboost_system.so
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/yujin_ocs/yocs_navigator/include -I/usr/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lyocs_basic_move_controller -lyocs_semantic_navigator /usr/lib/x86_64-linux-gnu/libboost_system.so
 Requires: roscpp actionlib tf yocs_math_toolkit move_base_msgs nav_msgs yocs_msgs

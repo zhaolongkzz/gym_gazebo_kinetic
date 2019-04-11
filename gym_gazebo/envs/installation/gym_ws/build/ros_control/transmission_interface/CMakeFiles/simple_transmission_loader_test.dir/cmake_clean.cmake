@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/simple_transmission_loader_test.dir/test/simple_transmission_loader_test.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/transmission_interface/simple_transmission_loader_test.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/transmission_interface/simple_transmission_loader_test"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/transmission_interface/simple_transmission_loader_test.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/transmission_interface/simple_transmission_loader_test"
 )
 
 # Per-language clean rules from dependency scanning.

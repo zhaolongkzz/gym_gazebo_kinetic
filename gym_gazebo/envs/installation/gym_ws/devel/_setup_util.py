@@ -1,4 +1,4 @@
-#!/home/zzl/anaconda3/envs/gym/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 # Software License Agreement (BSD License)

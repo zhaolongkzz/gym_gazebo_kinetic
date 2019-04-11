@@ -1,8 +1,0 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
-
-Name: combined_robot_hw
-Description: Description of combined_robot_hw
-Version: 0.13.3
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lcombined_robot_hw
-Requires: hardware_interface pluginlib roscpp

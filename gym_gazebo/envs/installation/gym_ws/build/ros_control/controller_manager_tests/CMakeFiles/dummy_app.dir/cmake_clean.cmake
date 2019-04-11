@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dummy_app.dir/src/dummy_app.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/controller_manager_tests/dummy_app.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/controller_manager_tests/dummy_app"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/controller_manager_tests/dummy_app.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/controller_manager_tests/dummy_app"
 )
 
 # Per-language clean rules from dependency scanning.

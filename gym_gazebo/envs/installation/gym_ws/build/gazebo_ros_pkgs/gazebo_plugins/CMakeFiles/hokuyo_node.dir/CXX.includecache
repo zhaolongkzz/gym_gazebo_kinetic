@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include/gazebo_plugins/HokuyoConfig.h
+/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include/gazebo_plugins/HokuyoConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/hokuyo_node.cpp
+/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/hokuyo_node.cpp
 dynamic_reconfigure/server.h
 -
 gazebo_plugins/HokuyoConfig.h

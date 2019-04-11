@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/camera_info_manager/tests/unit_test.cpp
+/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/camera_info_manager/tests/unit_test.cpp
 unistd.h
 -
 stdlib.h
@@ -16,7 +16,7 @@ ros/ros.h
 ros/package.h
 -
 camera_info_manager/camera_info_manager.h
-/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/camera_info_manager/tests/camera_info_manager/camera_info_manager.h
+/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/camera_info_manager/tests/camera_info_manager/camera_info_manager.h
 sensor_msgs/distortion_models.h
 -
 string

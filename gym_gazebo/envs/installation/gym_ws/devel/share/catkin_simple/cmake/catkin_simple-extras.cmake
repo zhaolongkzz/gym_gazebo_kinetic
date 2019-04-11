@@ -8,7 +8,7 @@ set(_CATKIN_SIMPLE_EXTRAS_INCLUDED_ TRUE)
 include(CMakeParseArguments)
 
 # cmake dir in develspace
-set(catkin_simple_CMAKE_DIR "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/catkin_simple/cmake")
+set(catkin_simple_CMAKE_DIR "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/catkin_simple/cmake")
 
 macro(catkin_simple)
   # Arguments

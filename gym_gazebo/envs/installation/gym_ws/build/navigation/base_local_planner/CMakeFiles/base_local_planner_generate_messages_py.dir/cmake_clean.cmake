@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/base_local_planner_generate_messages_py"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/python2.7/dist-packages/base_local_planner/msg/_Position2DInt.py"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/python2.7/dist-packages/base_local_planner/msg/__init__.py"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/python2.7/dist-packages/base_local_planner/msg/_Position2DInt.py"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/python2.7/dist-packages/base_local_planner/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

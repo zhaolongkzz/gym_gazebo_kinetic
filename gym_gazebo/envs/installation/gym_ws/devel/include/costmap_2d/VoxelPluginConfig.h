@@ -509,9 +509,9 @@ VoxelPluginConfig::GroupDescription<VoxelPluginConfig::DEFAULT, VoxelPluginConfi
 //#line 290 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.combination_method = 1;
 //#line 290 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      Default.abstract_parameters.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 16, 'description': 'b', 'srcfile': '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 17, 'description': 'a', 'srcfile': '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}]}", &VoxelPluginConfig::combination_method)));
+      Default.abstract_parameters.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 16, 'description': 'b', 'srcfile': '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 17, 'description': 'a', 'srcfile': '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}]}", &VoxelPluginConfig::combination_method)));
 //#line 290 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __param_descriptions__.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 16, 'description': 'b', 'srcfile': '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 17, 'description': 'a', 'srcfile': '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}]}", &VoxelPluginConfig::combination_method)));
+      __param_descriptions__.push_back(VoxelPluginConfig::AbstractParamDescriptionConstPtr(new VoxelPluginConfig::ParamDescription<int>("combination_method", "int", 0, "Method for combining two layers", "{'enum_description': 'Method for combining layers enum', 'enum': [{'srcline': 16, 'description': 'b', 'srcfile': '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 0, 'ctype': 'int', 'type': 'int', 'name': 'Overwrite'}, {'srcline': 17, 'description': 'a', 'srcfile': '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg', 'cconsttype': 'const int', 'value': 1, 'ctype': 'int', 'type': 'int', 'name': 'Maximum'}]}", &VoxelPluginConfig::combination_method)));
 //#line 245 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.convertParams();
 //#line 245 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -591,9 +591,9 @@ VoxelPluginConfig::GroupDescription<VoxelPluginConfig::DEFAULT, VoxelPluginConfi
     return statics;
   }
 
-//#line 16 "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg"
+//#line 16 "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg"
       const int VoxelPlugin_Overwrite = 0;
-//#line 17 "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg"
+//#line 17 "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/costmap_2d/cfg/VoxelPlugin.cfg"
       const int VoxelPlugin_Maximum = 1;
 }
 

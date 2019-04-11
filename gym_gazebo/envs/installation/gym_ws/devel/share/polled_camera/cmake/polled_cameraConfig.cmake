@@ -67,14 +67,14 @@ set(polled_camera_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(polled_camera_SOURCE_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera)
-  set(polled_camera_DEVEL_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel)
+  set(polled_camera_SOURCE_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera)
+  set(polled_camera_DEVEL_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel)
   set(polled_camera_INSTALL_PREFIX "")
   set(polled_camera_PREFIX ${polled_camera_DEVEL_PREFIX})
 else()
   set(polled_camera_SOURCE_PREFIX "")
   set(polled_camera_DEVEL_PREFIX "")
-  set(polled_camera_INSTALL_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install)
+  set(polled_camera_INSTALL_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install)
   set(polled_camera_PREFIX ${polled_camera_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(polled_camera_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include;/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera/include " STREQUAL " ")
+if(NOT "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include;/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera/include " STREQUAL " ")
   set(polled_camera_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include;/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera/include")
+  set(_include_dirs "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include;/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera/include")
   if(NOT "https://github.com/ros-perception/image_common/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-perception/image_common/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/polled_camera " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/includ
         message(FATAL_ERROR "Project 'polled_camera' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'polled_camera' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'polled_camera' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera/${idir}'.  ${_report}")
     endif()
     _list_append_unique(polled_camera_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

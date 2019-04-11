@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DHAVE_NEW_YAMLCPP -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"camera_calibration_parsers\" -Dcamera_calibration_parsers_EXPORTS
 
-CXX_INCLUDES = -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/camera_calibration_parsers/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/zzl/anaconda3/envs/gym/include/python2.7 
+CXX_INCLUDES = -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/camera_calibration_parsers/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/python2.7 
 

@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/base_local_planner_utest.dir/test/footprint_helper_test.cpp.o"
   "CMakeFiles/base_local_planner_utest.dir/test/trajectory_generator_test.cpp.o"
   "CMakeFiles/base_local_planner_utest.dir/test/map_grid_test.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/base_local_planner/base_local_planner_utest.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/base_local_planner/base_local_planner_utest"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/base_local_planner/base_local_planner_utest.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/base_local_planner/base_local_planner_utest"
 )
 
 # Per-language clean rules from dependency scanning.

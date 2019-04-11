@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ecl_test_polynomials.dir/polynomials.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_polynomials.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_polynomials"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_polynomials.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_polynomials"
 )
 
 # Per-language clean rules from dependency scanning.

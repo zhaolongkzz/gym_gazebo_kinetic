@@ -1,12 +1,12 @@
 
 "use strict";
 
-let ControllersStatistics = require('./ControllersStatistics.js');
 let ControllerState = require('./ControllerState.js');
+let ControllersStatistics = require('./ControllersStatistics.js');
 let ControllerStatistics = require('./ControllerStatistics.js');
 
 module.exports = {
-  ControllersStatistics: ControllersStatistics,
   ControllerState: ControllerState,
+  ControllersStatistics: ControllersStatistics,
   ControllerStatistics: ControllerStatistics,
 };

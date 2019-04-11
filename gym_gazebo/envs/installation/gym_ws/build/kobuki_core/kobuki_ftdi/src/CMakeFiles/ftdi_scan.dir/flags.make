@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/kobuki_core/kobuki_ftdi/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_command_line/include 
+CXX_INCLUDES = -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/kobuki_core/kobuki_ftdi/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_command_line/include 
 

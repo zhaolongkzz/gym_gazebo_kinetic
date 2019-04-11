@@ -1,10 +1,10 @@
 
 "use strict";
 
-let SetTurtlebotMode = require('./SetTurtlebotMode.js')
 let SetDigitalOutputs = require('./SetDigitalOutputs.js')
+let SetTurtlebotMode = require('./SetTurtlebotMode.js')
 
 module.exports = {
-  SetTurtlebotMode: SetTurtlebotMode,
   SetDigitalOutputs: SetDigitalOutputs,
+  SetTurtlebotMode: SetTurtlebotMode,
 };

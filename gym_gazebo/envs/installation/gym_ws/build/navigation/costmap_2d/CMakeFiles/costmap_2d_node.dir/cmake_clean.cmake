@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/costmap_2d_node.dir/src/costmap_2d_node.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/costmap_2d_node.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/costmap_2d_node"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/costmap_2d_node.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/costmap_2d_node"
 )
 
 # Per-language clean rules from dependency scanning.

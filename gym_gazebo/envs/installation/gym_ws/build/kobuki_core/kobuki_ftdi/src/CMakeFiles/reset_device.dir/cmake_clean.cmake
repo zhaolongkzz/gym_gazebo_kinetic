@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/reset_device.dir/reset_device.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/kobuki_ftdi/reset_device.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/kobuki_ftdi/reset_device"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/kobuki_ftdi/reset_device.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/kobuki_ftdi/reset_device"
 )
 
 # Per-language clean rules from dependency scanning.

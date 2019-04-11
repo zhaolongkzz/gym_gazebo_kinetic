@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"polled_camera\" -Dpolled_camera_EXPORTS
 
-CXX_INCLUDES = -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/image_transport/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/polled_camera/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/image_transport/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

@@ -1,56 +1,56 @@
 
 "use strict";
 
-let KeyboardInput = require('./KeyboardInput.js');
-let RobotStateEvent = require('./RobotStateEvent.js');
-let VersionInfo = require('./VersionInfo.js');
 let PowerSystemEvent = require('./PowerSystemEvent.js');
-let ScanAngle = require('./ScanAngle.js');
-let CliffEvent = require('./CliffEvent.js');
-let DockInfraRed = require('./DockInfraRed.js');
-let SensorState = require('./SensorState.js');
-let Led = require('./Led.js');
-let WheelDropEvent = require('./WheelDropEvent.js');
+let KeyboardInput = require('./KeyboardInput.js');
+let Sound = require('./Sound.js');
 let ButtonEvent = require('./ButtonEvent.js');
 let BumperEvent = require('./BumperEvent.js');
 let ControllerInfo = require('./ControllerInfo.js');
-let ExternalPower = require('./ExternalPower.js');
+let ScanAngle = require('./ScanAngle.js');
+let WheelDropEvent = require('./WheelDropEvent.js');
+let Led = require('./Led.js');
 let DigitalOutput = require('./DigitalOutput.js');
-let DigitalInputEvent = require('./DigitalInputEvent.js');
-let Sound = require('./Sound.js');
+let CliffEvent = require('./CliffEvent.js');
+let ExternalPower = require('./ExternalPower.js');
 let MotorPower = require('./MotorPower.js');
-let AutoDockingGoal = require('./AutoDockingGoal.js');
-let AutoDockingResult = require('./AutoDockingResult.js');
-let AutoDockingFeedback = require('./AutoDockingFeedback.js');
+let DigitalInputEvent = require('./DigitalInputEvent.js');
+let VersionInfo = require('./VersionInfo.js');
+let DockInfraRed = require('./DockInfraRed.js');
+let SensorState = require('./SensorState.js');
+let RobotStateEvent = require('./RobotStateEvent.js');
 let AutoDockingActionFeedback = require('./AutoDockingActionFeedback.js');
 let AutoDockingAction = require('./AutoDockingAction.js');
-let AutoDockingActionResult = require('./AutoDockingActionResult.js');
+let AutoDockingFeedback = require('./AutoDockingFeedback.js');
 let AutoDockingActionGoal = require('./AutoDockingActionGoal.js');
+let AutoDockingGoal = require('./AutoDockingGoal.js');
+let AutoDockingActionResult = require('./AutoDockingActionResult.js');
+let AutoDockingResult = require('./AutoDockingResult.js');
 
 module.exports = {
-  KeyboardInput: KeyboardInput,
-  RobotStateEvent: RobotStateEvent,
-  VersionInfo: VersionInfo,
   PowerSystemEvent: PowerSystemEvent,
-  ScanAngle: ScanAngle,
-  CliffEvent: CliffEvent,
-  DockInfraRed: DockInfraRed,
-  SensorState: SensorState,
-  Led: Led,
-  WheelDropEvent: WheelDropEvent,
+  KeyboardInput: KeyboardInput,
+  Sound: Sound,
   ButtonEvent: ButtonEvent,
   BumperEvent: BumperEvent,
   ControllerInfo: ControllerInfo,
-  ExternalPower: ExternalPower,
+  ScanAngle: ScanAngle,
+  WheelDropEvent: WheelDropEvent,
+  Led: Led,
   DigitalOutput: DigitalOutput,
-  DigitalInputEvent: DigitalInputEvent,
-  Sound: Sound,
+  CliffEvent: CliffEvent,
+  ExternalPower: ExternalPower,
   MotorPower: MotorPower,
-  AutoDockingGoal: AutoDockingGoal,
-  AutoDockingResult: AutoDockingResult,
-  AutoDockingFeedback: AutoDockingFeedback,
+  DigitalInputEvent: DigitalInputEvent,
+  VersionInfo: VersionInfo,
+  DockInfraRed: DockInfraRed,
+  SensorState: SensorState,
+  RobotStateEvent: RobotStateEvent,
   AutoDockingActionFeedback: AutoDockingActionFeedback,
   AutoDockingAction: AutoDockingAction,
-  AutoDockingActionResult: AutoDockingActionResult,
+  AutoDockingFeedback: AutoDockingFeedback,
   AutoDockingActionGoal: AutoDockingActionGoal,
+  AutoDockingGoal: AutoDockingGoal,
+  AutoDockingActionResult: AutoDockingActionResult,
+  AutoDockingResult: AutoDockingResult,
 };

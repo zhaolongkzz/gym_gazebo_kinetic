@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_ros_range.dir/src/gazebo_ros_range.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libgazebo_ros_range.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libgazebo_ros_range.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libgazebo_ros_range.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libgazebo_ros_range.so"
 )
 
 # Per-language clean rules from dependency scanning.

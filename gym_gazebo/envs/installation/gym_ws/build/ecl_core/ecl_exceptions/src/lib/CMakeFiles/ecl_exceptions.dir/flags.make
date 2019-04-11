@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Decl_exceptions_EXPORTS
 
-CXX_INCLUDES = -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_exceptions/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_errors/include 
+CXX_INCLUDES = -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_exceptions/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_errors/include 
 

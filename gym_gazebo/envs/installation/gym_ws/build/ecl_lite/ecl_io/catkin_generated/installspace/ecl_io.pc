@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
 
 Name: ecl_io
 Description: Description of ecl_io
 Version: 0.61.6
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lecl_io
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lecl_io
 Requires: 

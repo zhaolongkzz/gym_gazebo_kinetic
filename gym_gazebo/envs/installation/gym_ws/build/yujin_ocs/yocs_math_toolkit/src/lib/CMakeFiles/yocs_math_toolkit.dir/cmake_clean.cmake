@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/yocs_math_toolkit.dir/common.cpp.o"
   "CMakeFiles/yocs_math_toolkit.dir/geometry.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libyocs_math_toolkit.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libyocs_math_toolkit.so"
+  "CMakeFiles/yocs_math_toolkit.dir/common.cpp.o"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libyocs_math_toolkit.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libyocs_math_toolkit.so"
 )
 
 # Per-language clean rules from dependency scanning.

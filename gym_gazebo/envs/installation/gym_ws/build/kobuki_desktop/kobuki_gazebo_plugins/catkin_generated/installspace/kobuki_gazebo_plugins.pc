@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
 
 Name: kobuki_gazebo_plugins
 Description: Description of kobuki_gazebo_plugins
 Version: 0.5.7
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lgazebo_ros_kobuki
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lgazebo_ros_kobuki
 Requires: gazebo_ros gazebo_plugins geometry_msgs kobuki_msgs nav_msgs roscpp sensor_msgs std_msgs tf

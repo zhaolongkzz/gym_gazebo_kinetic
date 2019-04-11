@@ -1,8 +1,0 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
-
-Name: kobuki_auto_docking
-Description: Description of kobuki_auto_docking
-Version: 0.7.6
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lkobuki_auto_docking_ros -lkobuki_auto_docking_nodelet
-Requires: roscpp rospy nodelet pluginlib message_filters actionlib kdl_conversions ecl_threads ecl_geometry ecl_linear_algebra kobuki_msgs kobuki_dock_drive nav_msgs

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/base_local_planner_generate_messages_eus"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/roseus/ros/base_local_planner/msg/Position2DInt.l"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/roseus/ros/base_local_planner/manifest.l"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/roseus/ros/base_local_planner/msg/Position2DInt.l"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/roseus/ros/base_local_planner/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

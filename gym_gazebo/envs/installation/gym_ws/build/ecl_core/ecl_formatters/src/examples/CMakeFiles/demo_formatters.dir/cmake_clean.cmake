@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo_formatters.dir/formatters.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_formatters/demo_formatters.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_formatters/demo_formatters"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_formatters/demo_formatters.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_formatters/demo_formatters"
 )
 
 # Per-language clean rules from dependency scanning.

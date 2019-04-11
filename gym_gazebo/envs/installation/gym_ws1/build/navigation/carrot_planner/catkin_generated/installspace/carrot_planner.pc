@@ -1,8 +1,0 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
-
-Name: carrot_planner
-Description: Description of carrot_planner
-Version: 1.14.4
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lcarrot_planner
-Requires: roscpp pluginlib costmap_2d base_local_planner nav_core

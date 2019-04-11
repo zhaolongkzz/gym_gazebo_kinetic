@@ -2,280 +2,249 @@
 EN | [中文](https://github.com/zhaolongkzz/human_motion/blob/master/README_CN.md)
 
 # Overview of gym-gazebo
-An OpenAI gym extension for using Gazebo known as `gym-gazebo`!...
+An OpenAI gym extension for using Gazebo known as `gym-gazebo`! This work can put gym environment with gazbeo, then you can put robot into gazebo with code applying gym. You can also visit the official github here [gym-gazebo](https://github.com/erlerobot/gym-gazebo). If you use ROS2, you can visit the newest version [gym-gazebo2](https://github.com/AcutronicRobotics/gym-gazebo2).
 
 ## Summary
-Here I provide some installation and probblem solving, 
-
-
-Here I provide the code for [CVPR2015 Structural-RNN](https://arxiv.org/pdf/1511.05298.pdf), the original code of author is [here](http://asheshjain.org/srnn/).
-
-The work I have done is reproduce the paper, and make a animation from the result. And making a ROS topic to publish motion data,then a predicter to subscribe the data and predict the next motion from dataset. The code also get a TF animation in Rviz.
-
-Qualitatively, ERD models human motion better than LSTM-3LR. However, in the short-term, it does not mimic the ground-truth as well as LSTM-3LR.
-
-it well handles both short and long term forecasting. And the SRNN exhibit well both in short and long term prediction, the most important is that SRNN can also get well in aperiodic activity all algorithms.
-
-### Main files Location:
-- ./scripts/Prediction/generateMotionForecast.py
-- ./scripts/Animation/motionAnimation.py
+Because the official github which is about Ubuntu16.04 has been deprecated, Here I provide installation and some problem solving.
 
 ## Prerequisites
 - ubuntu16.04
+- ROS-Kinetic
+  &ensp;&ensp;(you can visit the official web [here](http://wiki.ros.org/kinetic/Installation/Ubuntu).)
+- Gazebo 7.14
+- openai-gym
+  &ensp;&ensp;(you can visit gym github [here](https://github.com/openai/gym.git).)
 - anaconda3
   &ensp;&ensp;(install anaconda, click [here](http://docs.anaconda.com/anaconda/install/linux/).)
-- ROS-Kinetic
-  &ensp;&ensp;(you can go to the official web [here](http://wiki.ros.org/kinetic/Installation/Ubuntu).)
 - python=2.7
   &ensp;&ensp;(with anaconda env below.)
 
-you can create an environment to run them.
+The package you need to install:
+- numpy=1.16.2
+- matplotlib=2.2.3
 
+If you want to train it with GPU here, you should install cuda
+- cuda=9.0
+- libcudnn7.3
+
+
+## Installation of conda env
+
+You can create an environment to run them.
 ```bash
-conda create -n srnn python=2.7
+conda create -n gymenv python=2.7
+source activate gymenv
 ```
 
-the package you need to install:
-- numpy>=1.8.1
-- theano=0.8.2
-- matplotlib=2.2.3
-- h5py=2.9.0
+Install gym anf gym-gazebo
+```bash
+# install gym
+git clone https://github.com/openai/gym.git
+cd gym
+pip install -e .
 
-if you want to train it with GPU here, you should install cuda
-- cuda=8.0
-- libcudnn6_6.0.21
+# install gym-gazebo
+git clone https://github.com/zhaolongkzz/gym_gazebo_kinetic
+cd ~/gym_gazebo_kinetic
+pip install -e .
+```
 
-**Note:** that cuda9 is not suitable for the code, please reinstall cuda8 and cudnn6 instead.
+Here some package you need to install first in your conda environment, if not ,it will appear some errors when you run the code.
+```bash
+conda install numpy matplotlib
 
-with the theano, using the package [NeuralModels](https://github.com/asheshjain399/NeuralModels) same as the paper.
-use the Model of theano, and install it with:
-```python setup.py develop```
+pip install rospkg catkin_pkg
 
-## Dataset
-**Note:** you can download the mocap dataset from [here](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip), and if you want more raw dataset, you can visit [H3.6m](http://vision.imar.ro/human3.6m/description.php).
+pip install defusedxml
 
-And the Pre-trained dataset is in [here](https://drive.google.com/drive/folders/0B7lfjqylzqmMZlI3TUNUUEFQMXc).
-(**Provided by the paper's author.**)
+conda install scikit-image
+
+pip install netifaces
+```
+
+## Installation of ROS
+First you should install some ROS dependencies below:
+```bash
+sudo apt-get install \
+cmake gcc g++ qt4-qmake libqt4-dev \
+libusb-dev libftdi-dev \
+ros-kinetic-octomap-msgs        \
+ros-kinetic-joy                 \
+ros-kinetic-geodesy             \
+ros-kinetic-octomap-ros         \
+ros-kinetic-control-toolbox     \
+ros-kinetic-pluginlib	       \
+ros-kinetic-trajectory-msgs     \
+ros-kinetic-control-msgs	       \
+ros-kinetic-std-srvs 	       \
+ros-kinetic-nodelet	       \
+ros-kinetic-urdf		       \
+ros-kinetic-rviz		       \
+ros-kinetic-kdl-conversions     \
+ros-kinetic-eigen-conversions   \
+ros-kinetic-tf2-sensor-msgs     \
+ros-kinetic-pcl-ros \
+ros-kinetic-navigation
+```
+
+Another dependencies and libraries:
+```bash
+# Failed to find libusb
+sudo apt-get install libusb-dev
+# ftdi.h: No such file or directory
+sudo apt-get install libftdi-dev
+
+sudo apt-get install ros-kinetic-sophus
+
+sudo apt-get install ros-kinetic-ar-track-alvar-msgs
+
+sudo apt-get install ros-kinetic-rqt-joint-trajectory-controller
+```
+
+Update you gazebo:
+```bash
+sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install gazebo7
+```
+
+
+
+
 
 ## Quickstart
 
-first, here you can git the code from github:
+### 1.Compile all the packages
+**Note**: All the command in ROS, I recommand you to execute in terminal without anaconda, this may lead some interference with your dependencies.
+
+I have alter some github package or version in files, you can use `gazebo_ros_kinetic.repos` in my github [here](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/gym_gazebo/envs/installation/gazebo_ros_kinetic.repos).
 ```bash
-git clone https://github.com/zhaolongkzz/human_motion
-unzip human_motion
-cd human_motion/scripts
-wget http://www.cs.stanford.edu/people/ashesh/h3.6m.zip
-unzip h3.6m.zip
-rm h3.6m.zip
-# download the Pre-trained dataset from Drive to scripts floder
+cd gym_gazebo_kinetic/envs/installation
+bash setup_kinetic.bash
 ```
 
-**Note:**download the Pre-tarined dataset from google drive, and place them into the scripts floder.(the h3.6m and Pre-train floders is both in scripts floder.)
-
-
-### With python
+Put model file into your workspace/src folder.
 ```bash
-cd scripts
-# train your model, it will cost you about 20 min
-python Prediction/generateMotionForecast.py srnn smoking
-# make a animation, and then it will play it automaticcally
-python Animation/motionAnimation.py --model srnn --action smoking
-# the result data will save with a h5df file in /Motion floder!
-```
-
-### With ROS
-
-Play the animation of the motion!
-```bash
-cd human_motion/scripts
-roscore
-# predict the motion, remember to open another terminal
-rosrun human_motion motion_predicts.py srnn smoking
-# read the file and publish the msg
-rosrun human_motion motion_publisher.py srnn smoking
-# get the data, and play the animation
-rosrun human_motion motion_animation.py
-```
-
-Here you can run the ground_truth or forcast file with RViz
-```bash
-rosrun human_motion read_motion.py h3.6m/dataset/S5/smoking_1.txt
-rosrun human_motion rviz_motion.py motion:=/motion_skeleto
-```
-
-## Structure
-The floder here is human\_motion.you'd better place the dataset as below.
-
-<p align="center">
-  <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/Tree.png"><br><br>
-</p>
-
-S-RNN architecture from the factor graph representation of the st-graph. The factors in the st-graph operate in a temporal manner, where at each time step the factors observe (node & edge) features and perform some computation on those features. In S-RNN, we represent each factor with an RNN. We refer the RNNs obtained from the node factors as nodeRNNs and the RNNs obtained from the edge factors as edgeRNNs. The interactions represented by the st-graph are captured through connections between the nodeRNNs and the edgeRNNs.
-**Parameter sharing and structured feature space**
-
-Structural-RNN make a connection between nodes and edges, and every one is trained by RNNs, so from the temporal graph, it will relate before state and the skeleto, then get a trade-off action to predict in the future.
-
-## Video
-### srnn_smoking
-<p align="center">
-  <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/srnn_smoking.gif"><br><br>
-</p>
-
-### srnn_eating
-<p align="center">
-  <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/srnn_eating.gif"><br><br>
-</p>
-
-### srnn_smoking in RViz
-<p align="center">
-  <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/rviz.gif"><br><br>
-</p>
-
-## LICENCE
-[MIT License](https://github.com/zhaolongkzz/human_motion/blob/master/LICENSE)
-
-## FAQ
-**Q1**.the path is miss, and it will not run well?
-
-**A1**:All the code is set by the premise of the scripts floder. So here you must change your dictionary to /scripts with your terminal, then it will get normal operation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###############################3
-
-
-<!--[![alt tag](https://travis-ci.org/erlerobot/gym.svg?branch=master)](https://travis-ci.org/erlerobot/gym)-->
-
-This work presents an extension of the initial OpenAI gym for robotics using ROS and Gazebo. A whitepaper about this work is available at https://arxiv.org/abs/1608.05742. Please use the following BibTex entry to cite our work:
-
-```
-@article{zamora2016extending,
-  title={Extending the OpenAI Gym for robotics: a toolkit for reinforcement learning using ROS and Gazebo},
-  author={Zamora, Iker and Lopez, Nestor Gonzalez and Vilches, Victor Mayoral and Cordero, Alejandro Hernandez},
-  journal={arXiv preprint arXiv:1608.05742},
-  year={2016}
-}
-```
-
------
-
-**`gym-gazebo` is a complex piece of software for roboticists that puts together simulation tools, robot middlewares (ROS, ROS 2), machine learning and reinforcement learning techniques. All together to create an environment whereto benchmark and develop behaviors with robots. Setting up `gym-gazebo` appropriately requires relevant familiarity with these tools.**
-
-**Code is available "as it is" and currently it's not supported by any specific organization. Community support is available [here](https://github.com/erlerobot/gym-gazebo/issues). Pull requests and contributions are welcomed.**
-
------
-
-## Table of Contents
-- [Environments](#community-maintained-environments)
-- [Installation](#installation)
-- [Usage](#usage)
-
-
-## Community-maintained environments
-The following are some of the gazebo environments maintained by the community using `gym-gazebo`. If you'd like to contribute and maintain an additional environment, submit a Pull Request with the corresponding addition.
-
-| Name | Middleware | Description | Observation Space | Action Space | Reward range |
-| ---- | ------ | ----------- | ----- | --------- | -------- |
-| ![GazeboCircuit2TurtlebotLidar-v0](imgs/GazeboCircuit2TurtlebotLidar-v0.png)`GazeboCircuit2TurtlebotLidar-v0` | ROS | A simple circuit with straight tracks and 90 degree turns. Highly discretized LIDAR readings are used to train the Turtlebot. Scripts implementing **Q-learning** and **Sarsa** can be found in the _examples_ folder. | | | |
-| ![GazeboCircuitTurtlebotLidar-v0](imgs/GazeboCircuitTurtlebotLidar-v0.png)`GazeboCircuitTurtlebotLidar-v0.png` | ROS | A more complex maze  with high contrast colors between the floor and the walls. Lidar is used as an input to train the robot for its navigation in the environment. | | | TBD |
-| `GazeboMazeErleRoverLidar-v0` | ROS, [APM](https://github.com/erlerobot/ardupilot) | **Deprecated** | | | |
-| `GazeboErleCopterHover-v0` | ROS, [APM](https://github.com/erlerobot/ardupilot) | **Deprecated** | | | |
-
-## Other environments (no support provided for these environments)
-
-The following table compiles a number of other environments that **do not have
-community support**.
-
-| Name | Middleware | Description | Observation Space | Action Space | Reward range |
-| ---- | ------ | ----------- | ----- | --------- | -------- |
-| ![cartpole-v0.png](imgs/cartpole.jpg)`GazeboCartPole-v0` | ROS | | Discrete(4,) | Discrete(2,) | 1) Pole Angle is more than ±12° 2)Cart Position is more than ±2.4 (center of the cart reaches the edge of the display) 3) Episode length is greater than 200 |
-| ![GazeboModularArticulatedArm4DOF-v1.png](imgs/GazeboModularArticulatedArm4DOF-v1.jpg)`GazeboModularArticulatedArm4DOF-v1` | ROS | This environment present a modular articulated arm robot with a two finger gripper at its end pointing towards the workspace of the robot.| Box(10,) | Box(3,) | (-1, 1) [`if rmse<5 mm 1 - rmse else reward=-rmse`]|
-| ![GazeboModularScara4DOF-v3.png](imgs/GazeboModularScara4DOF-v3.png)`GazeboModularScara4DOF-v3` | ROS | This environment present a modular SCARA robot with a range finder at its end pointing towards the workspace of the robot. The goal of this environment is defined to reach the center of the "O" from the "H-ROS" logo within the workspace. This environment compared to `GazeboModularScara3DOF-v2` is not pausing the Gazebo simulation and is tested in algorithms that solve continuous action space (PPO1 and ACKTR from baselines).This environment uses `slowness=1` and matches the delay between actions/observations to this value (slowness). In other words, actions are taken at "1/slowness" rate.| Box(10,) | Box(3,) | (-1, 1) [`if rmse<5 mm 1 - rmse else reward=-rmse`]|
-| ![GazeboModularScara3DOF-v3.png](imgs/GazeboModularScara3DOF-v3.png)`GazeboModularScara3DOF-v3` | ROS | This environment present a modular SCARA robot with a range finder at its end pointing towards the workspace of the robot. The goal of this environment is defined to reach the center of the "O" from the "H-ROS" logo within the workspace. This environment compared to `GazeboModularScara3DOF-v2` is not pausing the Gazebo simulation and is tested in algorithms that solve continuous action space (PPO1 and ACKTR from baselines).This environment uses `slowness=1` and matches the delay between actions/observations to this value (slowness). In other words, actions are taken at "1/slowness" rate.| Box(9,) | Box(3,) | (-1, 1) [`if rmse<5 mm 1 - rmse else reward=-rmse`]|
-| ![GazeboModularScara3DOF-v2.png](imgs/GazeboModularScara3DOF-v2.png)`GazeboModularScara3DOF-v2` | ROS | This environment present a modular SCARA robot with a range finder at its end pointing towards the workspace of the robot. The goal of this environment is defined to reach the center of the "O" from the "H-ROS" logo within the workspace. Reset function is implemented in a way that gives the robot 1 second to reach the "initial position".| Box(9,) | Box(3,) | (0, 1) [1 - rmse] |
-| ![GazeboModularScara3DOF-v1.png](imgs/GazeboModularScara3DOF-v1.png)`GazeboModularScara3DOF-v1` | ROS | **Deprecated** | | | TBD |
-| ![GazeboModularScara3DOF-v0.png](imgs/GazeboModularScara3DOF-v0.png)`GazeboModularScara3DOF-v0` | ROS | **Deprecated** | | | | TBD |
-| ![ariac_pick.jpg](imgs/ariac_pick.jpg)`ARIACPick-v0` | ROS | | | |  |
-
-## Installation
-Refer to [INSTALL.md](INSTALL.md)
-
-## Usage
-
-### Build and install gym-gazebo
-
-In the root directory of the repository:
-
-```bash
-sudo pip install -e .
-```
-
-### Running an environment
-
-- Load the environment variables corresponding to the robot you want to launch. E.g. to load the Turtlebot:
-
-```bash
-cd gym_gazebo/envs/installation
+cd gym_gazebo_kinetic/envs/installation
 bash turtlebot_setup.bash
 ```
 
-Note: all the setup scripts are available in `gym_gazebo/envs/installation`
-
-- Run any of the examples available in `examples/`. E.g.:
-
+After first two steps above, you will find five lines being added in your `~/.bashrc`:
 ```bash
-cd examples/turtlebot
+source /home/zzl/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/setup.bash
+export GAZEBO_MODEL_PATH=/home/zzl/gym-gazebo/gym_gazebo/envs/installation/../assets/models
+export GYM_GAZEBO_WORLD_MAZE=/home/zzl/gym-gazebo/gym_gazebo/envs/installation/../assets/worlds/maze.world
+export GYM_GAZEBO_WORLD_CIRCUIT=/home/zzl/gym-gazebo/gym_gazebo/envs/installation/../assets/worlds/circuit.world
+export GYM_GAZEBO_WORLD_CIRCUIT2=/home/zzl/gym-gazebo/gym_gazebo/envs/installation/../assets/worlds/circuit2.world
+export GYM_GAZEBO_WORLD_CIRCUIT2C=/home/zzl/gym-gazebo/gym_gazebo/envs/installation/../assets/worlds/circuit2c.world
+export GYM_GAZEBO_WORLD_ROUND=/home/zzl/gym-gazebo/gym_gazebo/envs/installation/../assets/worlds/round.world
+```
+
+Here you can open a new termianl, and uncomment your conda env in your `.bashrc`. Then you can use it with below:
+```bash
+source activate gymenv
+
+cd gym_gazebo/examples/scripts_turtlebot
 python circuit2_turtlebot_lidar_qlearn.py
 ```
 
-### Display the simulation
 
-To see what's going on in Gazebo during a simulation, run gazebo client. In order to launch the `gzclient` and be able to connect it to the running `gzserver`:
-1. Open a new terminal.
-2. Source the corresponding setup script, which will update the _GAZEBO_MODEL_PATH_ variable: e.g. `source setup_turtlebot.bash`
-3. Export the _GAZEBO_MASTER_URI_, provided by the [gazebo_env](https://github.com/erlerobot/gym-gazebo/blob/7c63c16532f0d8b9acf73663ba7a53f248021453/gym_gazebo/envs/gazebo_env.py#L33). You will see that variable printed at the beginning of every script execution. e.g. `export GAZEBO_MASTER_URI=http://localhost:13853`
-
-**Note**: This instructions are needed now since `gazebo_env` creates a random port for the GAZEBO_MASTER_URI, which allows to run multiple instances of the simulation at the same time. You can remove the following two lines from the environment if you are not planning to launch multiple instances:
-
+### 2.Open gazebo
+Open another Terminal:
 ```bash
-os.environ["ROS_MASTER_URI"] = "http://localhost:"+self.port
-os.environ["GAZEBO_MASTER_URI"] = "http://localhost:"+self.port_gazebo
-```
-
-Finally, launch gzclient.
-```bash
+cd gym-gazebo/gym_gazebo/envs/installation/
+source turtlebot_setup.bash
+# here the number is set in your code, default 12346
+export GAZEBO_MASTER_URI=http://localhost:12346
 gzclient
-
 ```
-
-### Display reward plot
-
-Display a graph showing the current reward history by running the following script:
 
 ```bash
 cd examples/utilities
 python display_plot.py
 ```
 
-HINT: use `--help` flag for more options.
+## Picture
+<p align="center">
+  <img src="https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/master/imgs/qlearn.png"><br><br>
+</p>
 
-### Killing background processes
+<p align="center">
+  <img src="https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/master/imgs/dqn.png"><br><br>
+</p>
 
-Sometimes, after ending or killing the simulation `gzserver` and `rosmaster` stay on the background, make sure you end them before starting new tests.
 
-We recommend creating an alias to kill those processes.
+## LICENCE
+[MIT License]()
 
+
+## FAQ
+**Q1**: If you encounter that `ImportError: No module named msg` like below:
 ```bash
-echo "alias killgazebogym='killall -9 rosout roslaunch rosmaster gzserver nodelet robot_state_publisher gzclient'" >> ~/.bashrc
+Traceback (most recent call last):
+  File "/home/zzl/gym_gazebo_kinetic/gym_gazebo/envs/installation/gym_ws/src/hector_gazebo/hector_gazebo_thermal_camera/cfg/GazeboRosThermalCamera.cfg", line 5, in <module>
+    from driver_base.msg import SensorLevels
+ImportError: No module named msg
+```
+
+**A1**: You can run driver_base first, like that `catkin_make -DCATKIN_WHITELIST_PACKAGES="driver_base"`.
+
+* * *
+
+**Q2**: If you encounter that `ImportError: cannot import name _validate_lengths` like below:
+```bash
+from numpy.lib.arraypad import _validate_lengths
+ImportError: cannot import name _validate_lengths
+```
+
+**A2**: You need to upgrade your scikit-image, like that `pip install --upgrade scikit-image`. I test the version of 0.14.2 works well.
+
+* * *
+
+**Q3**: If you encounter like below:
+```bash
+ERROR: cannot launch node of type [robot_state_publisher/robot_state_publisher]: robot_state_publisher
+```
+
+**A3**: You need to run `sudo apt-get install ros-kinetic-robot-state-publisher`
+
+* * *
+
+**Q4**: Here you protobuf is disturb by conda.
+```bash
+[libprotobuf FATAL google/protobuf/stubs/common.cc:61] This program requires version 3.6.1 of the Protocol Buffer runtime library, but the installed version is 2.6.1.  Please update your library.  If you compiled the program yourself, make sure that your headers are from the same version of Protocol Buffers as your link-time library.  (Version verification failed in "google/protobuf/any.pb.cc".)
+terminate called after throwing an instance of 'google::protobuf::FatalException'
+  what():  This program requires version 3.6.1 of the Protocol Buffer runtime library, but the installed version is 2.6.1.  Please update your library.  If you compiled the program yourself, make sure that your headers are from the same version of Protocol Buffers as your link-time library.  (Version verification failed in "google/protobuf/any.pb.cc".)
+Aborted (core dumped)
+[gazebo-1] process has died [pid 25049, exit code 134, cmd /home/zhaolong/gym_gazebo_kinetic/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_ros/scripts/gzserver --verbose -e ode /home/zhaolong/gym_gazebo_kinetic/gym_gazebo/envs/installation/../assets/worlds/circuit2.world __name:=gazebo __log:=/home/zhaolong/.ros/log/1593dbda-496c-11e9-8009-54bf648baa4d/gazebo-1.log].
+log file: /home/zhaolong/.ros/log/1593dbda-496c-11e9-8009-54bf648baa4d/gazebo-1*.log
+```
+
+**A4**: `conda install protobuf=3.5.2`
+
+* * *
+
+**Q5**: Lack of h files.
+```bash
+fatal error: spnav.h: No such file or directory
+fatal error: cwiid.h: No such file or directory
+```
+
+**A5**:
+```bash
+sudo apt-get install libspnav-dev
+sudo apt-get install libcwiid-dev
+```
+
+* * *
+
+**Q6**:
+```bash
+/usr/include/gazebo-7/gazebo/msgs/msgs.hh:24:37: fatal error: ignition/math/Inertial.hh: No such file or directory
+```
+
+**A6**:
+```bash
+sudo apt-get install libignition-math2-dev
 ```

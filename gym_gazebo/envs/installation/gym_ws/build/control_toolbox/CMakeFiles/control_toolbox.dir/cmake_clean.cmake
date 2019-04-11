@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/control_toolbox.dir/src/dither.cpp.o"
   "CMakeFiles/control_toolbox.dir/src/sinusoid.cpp.o"
   "CMakeFiles/control_toolbox.dir/src/limited_proxy.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libcontrol_toolbox.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libcontrol_toolbox.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libcontrol_toolbox.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libcontrol_toolbox.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,0 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: combined_robot_hw_tests
-Description: Description of combined_robot_hw_tests
-Version: 0.13.3
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ros_control/combined_robot_hw_tests/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lcombined_robot_hw_tests
-Requires: combined_robot_hw hardware_interface roscpp

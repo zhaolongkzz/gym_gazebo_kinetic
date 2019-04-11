@@ -1,8 +1,8 @@
-# Install script for directory: /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams
+# Install script for directory: /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,23 +34,23 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ecl/streams" TYPE FILE FILES
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/macros.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/manipulators.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/file_streams.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/log_stream.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/text_stream.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/console_streams.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/shared_file_stream.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/string_stream.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/serial_stream.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/socket_streams.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/log_stream.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/text_stream.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/string_stream.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/console_streams.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/socket_streams.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/file_streams.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/serial_stream.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/shared_file_stream.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/manipulators.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_streams/include/ecl/streams/macros.hpp"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/ecl_core/ecl_streams/include/ecl/streams/manipulators/cmake_install.cmake")
-  include("/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/ecl_core/ecl_streams/include/ecl/streams/text_streams/cmake_install.cmake")
+  include("/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/ecl_core/ecl_streams/include/ecl/streams/manipulators/cmake_install.cmake")
+  include("/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/ecl_core/ecl_streams/include/ecl/streams/text_streams/cmake_install.cmake")
 
 endif()
 

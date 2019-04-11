@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fake_localization.dir/fake_localization.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/fake_localization/fake_localization.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/fake_localization/fake_localization"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/fake_localization/fake_localization.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/fake_localization/fake_localization"
 )
 
 # Per-language clean rules from dependency scanning.

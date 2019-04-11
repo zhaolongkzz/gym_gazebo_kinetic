@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
 
 Name: kobuki_msgs
 Description: Description of kobuki_msgs
 Version: 0.6.1
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
 Requires: message_runtime std_msgs actionlib_msgs

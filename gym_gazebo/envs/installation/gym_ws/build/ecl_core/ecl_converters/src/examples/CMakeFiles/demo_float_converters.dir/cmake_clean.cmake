@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo_float_converters.dir/float_converters.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_converters/demo_float_converters.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_converters/demo_float_converters"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_converters/demo_float_converters.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_converters/demo_float_converters"
 )
 
 # Per-language clean rules from dependency scanning.

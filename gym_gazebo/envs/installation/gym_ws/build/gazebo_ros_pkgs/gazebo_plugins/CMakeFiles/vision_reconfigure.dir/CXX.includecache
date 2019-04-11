@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include/gazebo_plugins/CameraSynchronizerConfig.h
+/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include/gazebo_plugins/CameraSynchronizerConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/vision_reconfigure.h
+/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/vision_reconfigure.h
 ros/ros.h
 -
 std_msgs/Header.h
@@ -40,7 +40,7 @@ gazebo_plugins/CameraSynchronizerConfig.h
 ros/callback_queue.h
 -
 
-/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/vision_reconfigure.cpp
+/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/vision_reconfigure.cpp
 gazebo_plugins/vision_reconfigure.h
 -
 

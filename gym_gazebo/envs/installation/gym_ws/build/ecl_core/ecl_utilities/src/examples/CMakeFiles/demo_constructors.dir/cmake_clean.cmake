@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo_constructors.dir/constructors.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_utilities/demo_constructors.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_utilities/demo_constructors"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_utilities/demo_constructors.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_utilities/demo_constructors"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/map_server.dir/src/main.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/map_server/map_server.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/map_server/map_server"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/map_server/map_server.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/map_server/map_server"
 )
 
 # Per-language clean rules from dependency scanning.

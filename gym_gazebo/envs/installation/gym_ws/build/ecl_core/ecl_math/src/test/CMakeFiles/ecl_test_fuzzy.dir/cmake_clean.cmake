@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ecl_test_fuzzy.dir/fuzzy.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_math/ecl_test_fuzzy.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_math/ecl_test_fuzzy"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_math/ecl_test_fuzzy.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_math/ecl_test_fuzzy"
 )
 
 # Per-language clean rules from dependency scanning.

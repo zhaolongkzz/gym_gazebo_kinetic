@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ecl_test_odometry_helper.dir/odometry_helper.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_odometry_helper.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_odometry_helper"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_odometry_helper.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_geometry/ecl_test_odometry_helper"
 )
 
 # Per-language clean rules from dependency scanning.

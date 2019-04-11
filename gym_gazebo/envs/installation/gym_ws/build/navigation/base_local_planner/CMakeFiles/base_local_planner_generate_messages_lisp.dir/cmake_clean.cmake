@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/base_local_planner_generate_messages_lisp"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/common-lisp/ros/base_local_planner/msg/Position2DInt.lisp"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/common-lisp/ros/base_local_planner/msg/Position2DInt.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

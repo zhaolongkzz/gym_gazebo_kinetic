@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -fPIC
 
 CXX_DEFINES = -DHAVE_NEW_YAMLCPP -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"yocs_cmd_vel_mux\" -Dyocs_cmd_vel_mux_nodelet_EXPORTS
 
-CXX_INCLUDES = -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/yujin_ocs/yocs_cmd_vel_mux/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/yujin_ocs/yocs_cmd_vel_mux/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

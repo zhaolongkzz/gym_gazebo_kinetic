@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/costmap_2d_generate_messages_lisp"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/common-lisp/ros/costmap_2d/msg/VoxelGrid.lisp"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/common-lisp/ros/costmap_2d/msg/VoxelGrid.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

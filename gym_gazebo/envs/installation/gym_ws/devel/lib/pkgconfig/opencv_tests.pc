@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
 
 Name: opencv_tests
 Description: Description of opencv_tests
 Version: 1.12.8
 Cflags: 
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
 Requires: 

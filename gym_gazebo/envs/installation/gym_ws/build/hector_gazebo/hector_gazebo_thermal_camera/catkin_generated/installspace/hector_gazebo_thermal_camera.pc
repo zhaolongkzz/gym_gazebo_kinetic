@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
 
 Name: hector_gazebo_thermal_camera
 Description: Description of hector_gazebo_thermal_camera
 Version: 0.3.8
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib 
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib 
 Requires: nodelet image_transport dynamic_reconfigure driver_base gazebo_plugins

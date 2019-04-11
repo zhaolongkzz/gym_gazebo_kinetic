@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/republish.dir/src/republish.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/image_transport/republish.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/image_transport/republish"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/image_transport/republish.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/image_transport/republish"
 )
 
 # Per-language clean rules from dependency scanning.

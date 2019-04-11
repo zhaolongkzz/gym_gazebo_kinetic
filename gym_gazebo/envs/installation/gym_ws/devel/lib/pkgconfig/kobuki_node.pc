@@ -1,8 +1,8 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
+prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
 
 Name: kobuki_node
 Description: Description of kobuki_node
 Version: 0.6.8
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/kobuki/kobuki_node/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lkobuki_ros -lkobuki_nodelet
+Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/kobuki/kobuki_node/include
+Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lkobuki_ros -lkobuki_nodelet
 Requires: rospy roscpp nodelet pluginlib tf angles geometry_msgs sensor_msgs nav_msgs std_msgs diagnostic_updater diagnostic_msgs kobuki_msgs kobuki_driver kobuki_keyop kobuki_safety_controller ecl_exceptions ecl_sigslots ecl_streams ecl_threads

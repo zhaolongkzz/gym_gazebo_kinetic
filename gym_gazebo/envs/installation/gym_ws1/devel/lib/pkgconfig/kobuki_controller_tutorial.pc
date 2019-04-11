@@ -1,8 +1,0 @@
-prefix=/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: kobuki_controller_tutorial
-Description: Description of kobuki_controller_tutorial
-Version: 0.7.6
-Cflags: -I/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/kobuki/kobuki_controller_tutorial/include
-Libs: -L/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lbump_blink_controller_nodelet
-Requires: roscpp nodelet pluginlib std_msgs kobuki_msgs yocs_controllers

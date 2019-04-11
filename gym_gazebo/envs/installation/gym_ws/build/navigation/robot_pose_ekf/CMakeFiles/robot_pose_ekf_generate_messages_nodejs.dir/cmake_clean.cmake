@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robot_pose_ekf_generate_messages_nodejs"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/gennodejs/ros/robot_pose_ekf/srv/GetStatus.js"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/share/gennodejs/ros/robot_pose_ekf/srv/GetStatus.js"
 )
 
 # Per-language clean rules from dependency scanning.

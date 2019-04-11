@@ -1,8 +1,8 @@
-# Install script for directory: /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_navigation/ecl_mobile_robot/include/ecl/mobile_robot
+# Install script for directory: /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_navigation/ecl_mobile_robot/include/ecl/mobile_robot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,14 +34,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ecl/mobile_robot" TYPE FILE FILES
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_navigation/ecl_mobile_robot/include/ecl/mobile_robot/macros.hpp"
-    "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_navigation/ecl_mobile_robot/include/ecl/mobile_robot/differential_drive.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_navigation/ecl_mobile_robot/include/ecl/mobile_robot/differential_drive.hpp"
+    "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_navigation/ecl_mobile_robot/include/ecl/mobile_robot/macros.hpp"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/ecl_navigation/ecl_mobile_robot/include/ecl/mobile_robot/kinematics/cmake_install.cmake")
+  include("/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/ecl_navigation/ecl_mobile_robot/include/ecl/mobile_robot/kinematics/cmake_install.cmake")
 
 endif()
 

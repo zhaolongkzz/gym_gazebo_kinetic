@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner.cpp.o"
   "CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libtrajectory_planner_ros.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libtrajectory_planner_ros.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libtrajectory_planner_ros.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libtrajectory_planner_ros.so"
 )
 
 # Per-language clean rules from dependency scanning.

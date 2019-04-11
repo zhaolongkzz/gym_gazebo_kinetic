@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pcl_ros_features.dir/src/pcl_ros/features/pfh.cpp.o"
   "CMakeFiles/pcl_ros_features.dir/src/pcl_ros/features/principal_curvatures.cpp.o"
   "CMakeFiles/pcl_ros_features.dir/src/pcl_ros/features/vfh.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libpcl_ros_features.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libpcl_ros_features.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libpcl_ros_features.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libpcl_ros_features.so"
 )
 
 # Per-language clean rules from dependency scanning.

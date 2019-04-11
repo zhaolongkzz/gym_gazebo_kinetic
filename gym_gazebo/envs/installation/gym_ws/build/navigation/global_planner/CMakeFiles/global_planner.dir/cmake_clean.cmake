@@ -6,8 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/global_planner.dir/src/gradient_path.cpp.o"
   "CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o"
   "CMakeFiles/global_planner.dir/src/planner_core.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libglobal_planner.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libglobal_planner.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libglobal_planner.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libglobal_planner.so"
 )
 
 # Per-language clean rules from dependency scanning.

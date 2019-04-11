@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/obstacle_tests.dir/test/obstacle_tests.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/obstacle_tests.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/obstacle_tests"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/obstacle_tests.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/costmap_2d/obstacle_tests"
 )
 
 # Per-language clean rules from dependency scanning.

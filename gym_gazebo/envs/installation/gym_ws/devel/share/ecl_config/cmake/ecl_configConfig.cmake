@@ -67,14 +67,14 @@ set(ecl_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(ecl_config_SOURCE_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config)
-  set(ecl_config_DEVEL_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel)
+  set(ecl_config_SOURCE_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config)
+  set(ecl_config_DEVEL_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel)
   set(ecl_config_INSTALL_PREFIX "")
   set(ecl_config_PREFIX ${ecl_config_DEVEL_PREFIX})
 else()
   set(ecl_config_SOURCE_PREFIX "")
   set(ecl_config_DEVEL_PREFIX "")
-  set(ecl_config_INSTALL_PREFIX /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install)
+  set(ecl_config_INSTALL_PREFIX /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install)
   set(ecl_config_PREFIX ${ecl_config_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ecl_config_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config/include;/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include " STREQUAL " ")
+if(NOT "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config/include;/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include " STREQUAL " ")
   set(ecl_config_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config/include;/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include")
+  set(_include_dirs "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config/include;/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include")
   if(NOT "https://github.com/stonier/ecl_lite/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/stonier/ecl_lite/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/ecl_config " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite
         message(FATAL_ERROR "Project 'ecl_config' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'ecl_config' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'ecl_config' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_lite/ecl_config/${idir}'.  ${_report}")
     endif()
     _list_append_unique(ecl_config_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

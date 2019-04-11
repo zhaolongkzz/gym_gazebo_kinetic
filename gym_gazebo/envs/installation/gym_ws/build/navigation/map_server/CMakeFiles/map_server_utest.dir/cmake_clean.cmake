@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/map_server_utest.dir/test/utest.cpp.o"
   "CMakeFiles/map_server_utest.dir/test/test_constants.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/map_server/map_server_utest.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/map_server/map_server_utest"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/map_server/map_server_utest.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/map_server/map_server_utest"
 )
 
 # Per-language clean rules from dependency scanning.

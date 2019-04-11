@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/polled_camera.dir/src/publication_server.cpp.o"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libpolled_camera.pdb"
-  "/home/zzl/RL/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libpolled_camera.so"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libpolled_camera.pdb"
+  "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/libpolled_camera.so"
 )
 
 # Per-language clean rules from dependency scanning.
