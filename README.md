@@ -1,11 +1,13 @@
 
-EN | [中文](https://github.com/zhaolongkzz/human_motion/blob/master/README_CN.md)
+EN | [中文]
 
 # Overview of gym-gazebo
 An OpenAI gym extension for using Gazebo known as `gym-gazebo`! This work can put gym environment with gazbeo, then you can put robot into gazebo with code applying gym. You can also visit the official github here [gym-gazebo](https://github.com/erlerobot/gym-gazebo). If you use ROS2, you can visit the newest version [gym-gazebo2](https://github.com/AcutronicRobotics/gym-gazebo2).
 
 ## Summary
 Because the official github which is about Ubuntu16.04 has been deprecated, Here I provide installation and some problem solving.
+
+The original Installation of authors is here [original](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/Introduction.md) and here [INSTALL](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/INSTALL.md).
 
 ## Prerequisites
 - ubuntu16.04
@@ -110,9 +112,6 @@ sudo apt-get install gazebo7
 ```
 
 
-
-
-
 ## Quickstart
 
 ### 1.Compile all the packages
@@ -167,11 +166,11 @@ python display_plot.py
 
 ## Picture
 <p align="center">
-  <img src="https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/master/imgs/qlearn.png"><br><br>
+  <img src="https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/imgs/qlearn.png"><br><br>
 </p>
 
 <p align="center">
-  <img src="https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/master/imgs/dqn.png"><br><br>
+  <img src="https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/imgs/dqn.png"><br><br>
 </p>
 
 
