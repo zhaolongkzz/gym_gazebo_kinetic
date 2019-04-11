@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: mav_planning_msgs
-Description: Description of mav_planning_msgs
-Version: 3.3.2
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/mav_comm/mav_planning_msgs/include -I/usr/include/eigen3
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
-Requires: message_runtime geometry_msgs sensor_msgs std_msgs mav_msgs trajectory_msgs

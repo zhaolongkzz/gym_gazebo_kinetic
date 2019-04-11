@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/reset_device.dir/reset_device.cpp.o  -o /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/kobuki_ftdi/reset_device -rdynamic -lusb 

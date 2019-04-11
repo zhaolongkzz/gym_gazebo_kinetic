@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: amcl
-Description: Description of amcl
-Version: 1.12.16
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/navigation/amcl/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lamcl_sensors -lamcl_map -lamcl_pf
-Requires: rosbag roscpp dynamic_reconfigure tf nav_msgs std_srvs

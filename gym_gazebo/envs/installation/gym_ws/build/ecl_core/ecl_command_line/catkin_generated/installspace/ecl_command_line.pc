@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
-
-Name: ecl_command_line
-Description: Description of ecl_command_line
-Version: 0.61.18
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib 
-Requires: 

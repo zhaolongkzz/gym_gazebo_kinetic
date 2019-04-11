@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
-
-Name: ecl_threads
-Description: Description of ecl_threads
-Version: 0.61.18
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lecl_threads -lpthread
-Requires: ecl_config ecl_errors ecl_concepts ecl_exceptions ecl_time ecl_utilities

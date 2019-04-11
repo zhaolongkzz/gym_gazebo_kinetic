@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: kobuki_safety_controller
-Description: Description of kobuki_safety_controller
-Version: 0.6.8
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/kobuki/kobuki_safety_controller/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lkobuki_safety_controller_nodelet
-Requires: roscpp nodelet pluginlib std_msgs geometry_msgs kobuki_msgs yocs_controllers ecl_threads

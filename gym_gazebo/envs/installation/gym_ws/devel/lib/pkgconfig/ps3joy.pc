@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: ps3joy
-Description: Description of ps3joy
-Version: 1.11.0
-Cflags: 
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib 
-Requires: diagnostic_msgs sensor_msgs rospy rosgraph

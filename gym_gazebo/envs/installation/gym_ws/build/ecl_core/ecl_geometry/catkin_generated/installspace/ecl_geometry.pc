@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
-
-Name: ecl_geometry
-Description: Description of ecl_geometry
-Version: 0.61.18
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lecl_geometry
-Requires: ecl_build ecl_config ecl_type_traits ecl_containers ecl_formatters ecl_linear_algebra ecl_exceptions ecl_math ecl_mpl

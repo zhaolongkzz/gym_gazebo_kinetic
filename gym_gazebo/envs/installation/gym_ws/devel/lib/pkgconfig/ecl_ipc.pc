@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: ecl_ipc
-Description: Description of ecl_ipc
-Version: 0.61.18
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_ipc/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lecl_ipc
-Requires: ecl_config ecl_errors ecl_time_lite ecl_exceptions ecl_time

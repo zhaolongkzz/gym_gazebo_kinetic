@@ -1,8 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ecl_core/ecl_statistics/src/test
-# Build directory: /home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/ecl_core/ecl_statistics/src/test
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
-add_test(_ctest_ecl_statistics_gtest_ecl_test_covariance_ellipsoids "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/test_results/ecl_statistics/gtest-ecl_test_covariance_ellipsoids.xml" "--return-code" "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_statistics/ecl_test_covariance_ellipsoids --gtest_output=xml:/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/test_results/ecl_statistics/gtest-ecl_test_covariance_ellipsoids.xml")
-add_test(_ctest_ecl_statistics_gtest_ecl_test_cumulative_statistics "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/kinetic/share/catkin/cmake/test/run_tests.py" "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/test_results/ecl_statistics/gtest-ecl_test_cumulative_statistics.xml" "--return-code" "/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib/ecl_statistics/ecl_test_cumulative_statistics --gtest_output=xml:/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/build/test_results/ecl_statistics/gtest-ecl_test_cumulative_statistics.xml")

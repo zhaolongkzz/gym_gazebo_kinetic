@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: camera_calibration_parsers
-Description: Description of camera_calibration_parsers
-Version: 1.11.13
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/image_common/camera_calibration_parsers/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib -lcamera_calibration_parsers
-Requires: sensor_msgs

@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
-
-Name: yocs_virtual_sensor
-Description: Description of yocs_virtual_sensor
-Version: 0.8.2
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include -I/usr/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib /usr/lib/x86_64-linux-gnu/libboost_system.so
-Requires: tf roscpp sensor_msgs geometry_msgs yocs_msgs yocs_math_toolkit

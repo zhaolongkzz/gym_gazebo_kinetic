@@ -1,9 +1,0 @@
-\subsubsection parameters ROS parameters
-
-Reads and maintains the following parameters on the ROS server
-
-- \b "~cluster_tolerance" : \b [double] The spatial tolerance as a measure in the L2 Euclidean space min: 0.0, default: 0.05, max: 2.0
-- \b "~cluster_min_size" : \b [int] The minimum number of points that a cluster must contain in order to be accepted min: 0, default: 1, max: 1000
-- \b "~cluster_max_size" : \b [int] The maximum number of points that a cluster must contain in order to be accepted min: 0, default: 2147483647, max: 2147483647
-- \b "~max_clusters" : \b [int] The maximum number of clusters to extract. min: 1, default: 2147483647, max: 2147483647
-

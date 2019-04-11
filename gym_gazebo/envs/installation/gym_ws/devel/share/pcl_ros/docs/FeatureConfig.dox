@@ -1,7 +1,0 @@
-\subsubsection parameters ROS parameters
-
-Reads and maintains the following parameters on the ROS server
-
-- \b "~k_search" : \b [int] Number of k-nearest neighbors to search for min: 0, default: 10, max: 1000
-- \b "~radius_search" : \b [double] Sphere radius for nearest neighbor search min: 0.0, default: 0.0, max: 0.5
-

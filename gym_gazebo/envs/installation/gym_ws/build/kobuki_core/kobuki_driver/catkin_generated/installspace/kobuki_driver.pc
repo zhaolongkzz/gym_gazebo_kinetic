@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install
-
-Name: kobuki_driver
-Description: Description of kobuki_driver
-Version: 0.6.5
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/install/lib -lkobuki
-Requires: ecl_command_line ecl_converters ecl_devices ecl_geometry ecl_mobile_robot ecl_sigslots ecl_time

@@ -1,8 +1,0 @@
-\subsubsection usage Usage
-\verbatim
-<node name="yocs_msgs" pkg="yocs_msgs" type="yocs_msgs">
-  <param name="linear_scale" type="double" value="0.4" />
-  <param name="angular_scale" type="double" value="0.3" />
-</node>
-\endverbatim
-

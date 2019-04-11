@@ -1,8 +1,0 @@
-prefix=/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel
-
-Name: joint_limits_interface
-Description: Description of joint_limits_interface
-Version: 0.9.7
-Cflags: -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ros_control/joint_limits_interface/include -I/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/src/ros_control/hardware_interface/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include
-Libs: -L/home/zzl/tools/gym-gazebo/gym_gazebo/envs/installation/gym_ws/devel/lib /opt/ros/kinetic/lib/liburdf.so /usr/lib/x86_64-linux-gnu/libtinyxml.so /opt/ros/kinetic/lib/librosconsole_bridge.so /opt/ros/kinetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gnu/libboost_signals.so /opt/ros/kinetic/lib/librosconsole.so /opt/ros/kinetic/lib/librosconsole_log4cxx.so /opt/ros/kinetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so /opt/ros/kinetic/lib/libroscpp_serialization.so /opt/ros/kinetic/lib/libxmlrpcpp.so /opt/ros/kinetic/lib/librostime.so /opt/ros/kinetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_thread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so /usr/lib/x86_64-linux-gnu/libboost_atomic.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so /usr/lib/x86_64-linux-gnu/liburdfdom_model.so /usr/lib/x86_64-linux-gnu/liburdfdom_world.so /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-Requires: roscpp hardware_interface urdf

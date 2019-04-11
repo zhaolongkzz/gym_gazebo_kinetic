@@ -1,8 +1,0 @@
-\subsubsection parameters ROS parameters
-
-Reads and maintains the following parameters on the ROS server
-
-- \b "~mean_k" : \b [int] The number of points (k) to use for mean distance estimation min: 2, default: 2, max: 100
-- \b "~stddev" : \b [double] The standard deviation multiplier threshold. All points outside the mean +- sigma * std_mul will be considered outliers. min: 0.0, default: 0.0, max: 5.0
-- \b "~negative" : \b [bool] Set whether the inliers should be returned (true) or the outliers (false) min: False, default: False, max: True
-
