@@ -3,6 +3,7 @@
 *.py~
 .DS_Store
 .cache
+.vscode
 
 # Setuptools distribution and build folders.
 /dist/
@@ -38,8 +39,8 @@ tutorial/*.html
 vizdoom.ini
 
 # Gazebo project files
-gym_ws/build
-gym_ws/devel
+gym_ws/
+gym_ws/
 apm/
 sophus/
 eeprom.bin
