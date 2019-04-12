@@ -2,20 +2,20 @@
 EN | [中文]
 
 # Overview of gym-gazebo
-An OpenAI gym extension for using Gazebo known as `gym-gazebo`! This work can put gym environment with gazbeo, then you can put robot into gazebo with code applying gym. You can also visit the official github here [gym-gazebo](https://github.com/erlerobot/gym-gazebo). If you use ROS2, you can visit the newest version [gym-gazebo2](https://github.com/AcutronicRobotics/gym-gazebo2).
+An OpenAI gym extension for using Gazebo known as `gym-gazebo`! This work can put gym environment with gazbeo, then you would like putting robot into gazebo with code applying gym. You can also visit the official github here [gym-gazebo](https://github.com/erlerobot/gym-gazebo). If you use ROS2, the better way to you is visiting the newest version [gym-gazebo2](https://github.com/AcutronicRobotics/gym-gazebo2).
 
 ## Summary
-Because the official github which is about Ubuntu16.04 has been deprecated, Here I provide installation and some problem solving.
+Because the official github which install version to Ubuntu16.04 has been deprecated, and the package in author's github has many question that has been closed without issues, Here I provide installation of mine and some hint to problem solving.
 
-The original Installation of authors is here [original](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/Introduction.md) and here [INSTALL](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/INSTALL.md).
+The original Installation of authors is here [original](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/Introduction.md) and here [INSTALL](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/INSTALL.md). If this installation wouldn't help you, visiting the author's github and submit a issue.
 
 ## Prerequisites
 - ubuntu16.04
 - ROS-Kinetic
-  &ensp;&ensp;(you can visit the official web [here](http://wiki.ros.org/kinetic/Installation/Ubuntu).)
+  &ensp;&ensp;(visit the official web [here](http://wiki.ros.org/kinetic/Installation/Ubuntu).)
 - Gazebo 7.14
 - openai-gym
-  &ensp;&ensp;(you can visit gym github [here](https://github.com/openai/gym.git).)
+  &ensp;&ensp;(visit gym github [here](https://github.com/openai/gym.git).)
 - anaconda3
   &ensp;&ensp;(install anaconda, click [here](http://docs.anaconda.com/anaconda/install/linux/).)
 - python=2.7
@@ -32,7 +32,7 @@ If you want to train it with GPU here, you should install cuda
 
 ## Installation of conda env
 
-You can create an environment to run them.
+Create an environment to run them.
 ```bash
 conda create -n gymenv python=2.7
 source activate gymenv
@@ -65,7 +65,7 @@ pip install netifaces
 ```
 
 ## Installation of ROS
-First you should install some ROS dependencies below:
+First installing some ROS dependencies below:
 ```bash
 sudo apt-get install \
 cmake gcc g++ qt4-qmake libqt4-dev \
@@ -103,7 +103,7 @@ sudo apt-get install ros-kinetic-ar-track-alvar-msgs
 sudo apt-get install ros-kinetic-rqt-joint-trajectory-controller
 ```
 
-Update you gazebo:
+Update your gazebo:
 ```bash
 sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
 wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
@@ -115,9 +115,9 @@ sudo apt-get install gazebo7
 ## Quickstart
 
 ### 1.Compile all the packages
-**Note**: All the command in ROS, I recommand you to execute in terminal without anaconda, this may lead some interference with your dependencies.
+**Note**: All the command in ROS, I recommand executing in terminal without anaconda, this may lead some interference with your dependencies.
 
-I have alter some github package or version in files, you can use `gazebo_ros_kinetic.repos` in my github [here](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/gym_gazebo/envs/installation/gazebo_ros_kinetic.repos).
+I have alter some github package or version in files, use `gazebo_ros_kinetic.repos` in my github [here](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/gym_gazebo/envs/installation/gazebo_ros_kinetic.repos), please.
 ```bash
 cd gym_gazebo_kinetic/envs/installation
 bash setup_kinetic.bash
@@ -140,7 +140,7 @@ export GYM_GAZEBO_WORLD_CIRCUIT2C=/home/zzl/gym-gazebo/gym_gazebo/envs/installat
 export GYM_GAZEBO_WORLD_ROUND=/home/zzl/gym-gazebo/gym_gazebo/envs/installation/../assets/worlds/round.world
 ```
 
-Here you can open a new termianl, and uncomment your conda env in your `.bashrc`. Then you can use it with below:
+Here open a new termianl, and uncomment your conda env in your `.bashrc`. Then using it with below:
 ```bash
 source activate gymenv
 
@@ -187,7 +187,7 @@ Traceback (most recent call last):
 ImportError: No module named msg
 ```
 
-**A1**: You can run driver_base first, like that `catkin_make -DCATKIN_WHITELIST_PACKAGES="driver_base"`.
+**A1**: Run driver_base first, like that `catkin_make -DCATKIN_WHITELIST_PACKAGES="driver_base"`.
 
 * * *
 
@@ -201,16 +201,16 @@ ImportError: cannot import name _validate_lengths
 
 * * *
 
-**Q3**: If you encounter like below:
+**Q3**: If encountering like below:
 ```bash
 ERROR: cannot launch node of type [robot_state_publisher/robot_state_publisher]: robot_state_publisher
 ```
 
-**A3**: You need to run `sudo apt-get install ros-kinetic-robot-state-publisher`
+**A3**: Need to run `sudo apt-get install ros-kinetic-robot-state-publisher`
 
 * * *
 
-**Q4**: Here you protobuf is disturb by conda.
+**Q4**: Here your protobuf is disturbed by conda or wrong version of your protobuf.
 ```bash
 [libprotobuf FATAL google/protobuf/stubs/common.cc:61] This program requires version 3.6.1 of the Protocol Buffer runtime library, but the installed version is 2.6.1.  Please update your library.  If you compiled the program yourself, make sure that your headers are from the same version of Protocol Buffers as your link-time library.  (Version verification failed in "google/protobuf/any.pb.cc".)
 terminate called after throwing an instance of 'google::protobuf::FatalException'
@@ -220,7 +220,7 @@ Aborted (core dumped)
 log file: /home/zhaolong/.ros/log/1593dbda-496c-11e9-8009-54bf648baa4d/gazebo-1*.log
 ```
 
-**A4**: `conda install protobuf=3.5.2`
+**A4**: `conda install protobuf=3.5.2` in conda, here I recommand that version 2.6 is better for ubuntu16.04, so run all of the code in 2.6, please.
 
 * * *
 
