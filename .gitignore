@@ -41,6 +41,7 @@ vizdoom.ini
 # Gazebo project files
 devel/
 build/
+gym_ws/
 gym_gazebo/envs/installation/README.md
 CMakeLists.txt
 apm/
