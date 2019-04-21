@@ -159,6 +159,7 @@ export GAZEBO_MASTER_URI=http://localhost:12346
 gzclient
 ```
 
+Display a graph showing the current reward history by running the following script:
 ```bash
 cd examples/utilities
 python display_plot.py
@@ -179,6 +180,7 @@ python display_plot.py
 
 
 ## FAQ
+
 **Q1**: If you encounter that `ImportError: No module named msg` like below:
 ```bash
 Traceback (most recent call last):
@@ -221,6 +223,9 @@ log file: /home/zhaolong/.ros/log/1593dbda-496c-11e9-8009-54bf648baa4d/gazebo-1*
 ```
 
 **A4**: `conda install protobuf=3.5.2` in conda, here I recommand that version 2.6 is better for ubuntu16.04, so run all of the code in 2.6, please.
+Note that compile all the package with `catkin_make` without conda env, i.e. commenting the lines about conda. And after all the packages is compiled well, then open a new ternimal, and uncomment conda env, run `python circuit2_turtlebot_lidar_qlearn.py`
+
+
 
 * * *
 
