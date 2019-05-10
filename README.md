@@ -176,7 +176,7 @@ python display_plot.py
 
 
 ## LICENCE
-[MIT License]()
+[MIT License](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/LICENSE)
 
 
 ## FAQ
