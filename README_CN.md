@@ -1,4 +1,4 @@
-[[EN](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/README.md)] | 中文
+[EN](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/README.md) | 中文
 
 # Overview of gym-gazebo
 `gym-gazebo`作为OpenAI gym的一个延伸工具，能够将gym环境应用到gazebo上，方便了ros用户在机器人环境中使用强化学习进行仿真！你也可以查看官方的库 [gym-gazebo](https://github.com/erlerobot/gym-gazebo). 如果使用ROS2，那么直接尝试最新版的 [gym-gazebo2](https://github.com/AcutronicRobotics/gym-gazebo2).

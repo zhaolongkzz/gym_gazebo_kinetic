@@ -1,5 +1,5 @@
 
-EN | [中文]
+EN | [中文](https://github.com/zhaolongkzz/gym_gazebo_kinetic/blob/kinetic/README_CN.md)
 
 # Overview of gym-gazebo
 An OpenAI gym extension for using Gazebo known as `gym-gazebo`! This work can put gym environment with gazbeo, then you would like putting robot into gazebo with code applying gym. You can also visit the official github here [gym-gazebo](https://github.com/erlerobot/gym-gazebo). If you use ROS2, the better way to you is visiting the newest version [gym-gazebo2](https://github.com/AcutronicRobotics/gym-gazebo2).
